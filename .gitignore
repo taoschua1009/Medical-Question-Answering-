@@ -1,0 +1,56 @@
+# ===============================
+# Python / Env
+# ===============================
+__pycache__/
+*.pyc
+.venv/
+env/
+.env
+.history
+
+# ===============================
+# Models & Checkpoints (SMoE)
+# ===============================
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+Experts/**/checkpoint-*/
+Experts/**/model.safetensors
+Experts/**/dual_adapter_*.pt
+
+Gating/**/*.pt
+Gating/checkpoint/
+
+# ===============================
+# Data (CSV, generated)
+# ===============================
+data/
+data_smoe/
+evaluation/system_predictions.csv
+evaluation/gen_gold_qa/
+evaluation/data/
+
+*.csv
+
+# ===============================
+# Neo4j
+# ===============================
+data_kg/backup/
+data_kg/csv/
+data_kg/judge/
+
+# ===============================
+# Jupyter
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# OS / IDE
+# ===============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

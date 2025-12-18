@@ -1,0 +1,2466 @@
+// ===== Article 227 | Chunk 4 | Tế bào gốc tạo máu =====
+MERGE (t1:Topic {name:"Trữ máu cuống rốn", layer:"Topic"})
+
+/* ===== DETAIL ===== */
+MERGE (dt1:Detail {name:"việc trữ máu cuống rốn được thực hiện ngay sau khi sinh thường hoặc sinh mổ bằng bộ dụng cụ chuyên dụng", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt1)
+
+MERGE (dt2:Detail {name:"máu cuống rốn được lấy trước khi nhau sổ bằng cách mở kẹp dây rốn và luồn ống vào tĩnh mạch rốn", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt2)
+
+MERGE (dt3:Detail {name:"trong mổ lấy thai, việc thu thập máu cuống rốn phức tạp hơn và lượng máu thu được thường ít hơn", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt3)
+
+MERGE (dt4:Detail {name:"số lượng máu thu được quyết định số lượng tế bào gốc dùng để cấy ghép", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt4)
+
+MERGE (dt5:Detail {name:"máu cuống rốn được chuyển tới ngân hàng máu cuống rốn để tách tế bào gốc và đông lạnh lưu trữ", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt5)
+
+MERGE (dt6:Detail {name:"tế bào gốc tạo máu có thể được sử dụng cho tự ghép hoặc dị ghép", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt6)
+
+MERGE (dt7:Detail {name:"tế bào gốc có thể tồn tại rất lâu khi lưu trữ trong nitơ lỏng nhưng thời gian tối đa vẫn đang được nghiên cứu", layer:"Detail"})
+MERGE (t1)-[:HAS_DETAIL]->(dt7)
+
+;
+
+// ===== Article 227 | Chunk 5 | Trữ máu cuống rốn =====
+MERGE (d:Topic {name:"Trữ máu cuống rốn", layer:"Topic"})
+MERGE (det1:Detail {name:"trữ máu cuống rốn không được thực hiện thường quy khi sinh trong bệnh viện hay sinh tại nhà – đây là một quy trình bạn phải lựa chọn và lập kế hoạch trước đó, vì vậy hãy chắc chắn là bạn đã xem xét kỹ càng việc này trước ngày sinh nở.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (rf1:RiskFactor {name:"lý do chính mà các bậc cha mẹ nghĩ đến việc trữ máu cuống rốn cho con của họ là bởi vì họ có một đứa con hoặc người thân hoặc gia đình có tiền sử bị những bệnh có thể được điều trị bằng cấy ghép tủy xương.", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (c1:Cause {name:"một số bệnh thường liên quan đến cấy ghép tủy xương là một số loại bệnh bạch cầu hoặc ung thư lympho, thiếu máu bất sản, thiếu máu tế bào hình liềm nặng, và suy giảm miễn dịch nặng kết hợp.", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (rf2:RiskFactor {name:"với một đứa trẻ thông thường không có yếu tố nguy cơ nào thì khả năng sử dụng máu cuống rốn của chúng rất thấp; tuy nhiên, hiện chưa có một con số ước tính chính xác vào thời điểm này.", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf2)
+MERGE (det2:Detail {name:"các chi phí của việc thu thập và lưu trữ máu cuống rốn có thể là một yếu tố quyết định cho nhiều gia đình. tại một ngân hàng máu cuống rốn tư nhân, bạn sẽ phải trả khoảng $ 1.000 – $ 2.000 để lưu trữ một mẫu máu cuống rốn, cùng với một khoản phí để duy trì hàng năm khoảng $ 100. bạn cũng có thể phải trả một khoản phí bổ sung vài trăm đô la cho một bộ dụng cụ thu thập máu cuống rốn, dịch vụ chuyển đến ngân hàng máu cuống rốn, và quy trình xử lý ban đầu.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (p1:Population {name:"trong hầu hết các trường hợp, cấy ghép tế bào gốc chỉ được thực hiện trên trẻ em hoặc người trưởng thành trẻ tuổi. cơ thể của người được ghép càng lớn bao nhiêu, số lượng tế bào gốc tạo máu cần thiết càng nhiều bấy nhiêu để có thể cấy ghép thành công. tế bào gốc máu cuống rốn không đủ số lượng để thực hiện cấy ghép cho người lớn.", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (det3:Detail {name:"ngoài ra, vẫn chưa xác định được liệu các tế bào gốc lấy từ người thân có cơ hội thành công cao hơn so với những người nhận từ người ngoài hay không. các tế bào gốc từ máu cuống rốn của những người hiến tặng là người thân lẫn người ngoài đều đã thành công trong nhiều ca cấy ghép. đó là bởi vì các tế bào gốc tạo máu được lấy từ máu dây rốn là tinh khiết (một thuật ngữ y khoa dùng để chỉ các tế bào mới hình thành có khả năng thích ứng cao và ít có khả năng bị hệ miễn dịch của người nhận đào thải). do đó, tế bào gốc máu cuống rốn của người cho không cần phải hoàn toàn phù hợp với người nhận để có thể cấy ghép tủy xương thành công.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"hiện có rất ít kinh nghiệm với cấy tế bào tự thân. một số chuyên gia lo ngại rằng một em bé bị bệnh được cấy ghép các tế bào gốc của chính mình sẽ dễ bị lại loại bệnh đó. hầu hết các ca cấy ghép tủy xương sử dụng tế bào gốc tạo máu đã được thực hiện cho người thân của đứa trẻ tặng, chứ không cấy ghép cho chính đứa trẻ được trữ máu cuống rốn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (rf3:RiskFactor {name:"những nguy cơ đối với sức khỏe của mẹ và bé tại thời điểm thu thập máu là thấp, nhưng vẫn có thể có. kẹp dây rốn quá sớm sau khi sinh có thể làm tăng lượng máu thu thập được, nhưng nó có thể làm cho trẻ sơ sinh bị giảm thể tích máu và có thể thiếu máu ngay sau khi sinh.", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf3)
+
+;
+
+// ===== Article 227 | Chunk 6 | Trữ máu cuống rốn =====
+MERGE (d:Topic {name:"Trữ máu cuống rốn", layer:"Topic"})
+MERGE (det1:Detail {name:"trữ máu cuống rốn có cần thiết cho bạn không? có rất nhiều cân nhắc và thận trọng cần lưu ý khi các bậc cha mẹ xem xét các lý do của mình trong việc trữ máu cuống rốn của con và tìm hiểu về các ngân hàng máu cuống rốn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"một số bác sĩ và tổ chức, chẳng hạn như viện hàn lâm nhi khoa mỹ (aap), đã bày tỏ lo ngại rằng ngân hàng máu cuống rốn có thể lạm dụng nỗi lo sợ của những người mới làm cha mẹ bằng cách cung cấp thông tin sai lệch về số liệu thống kê của cấy ghép tủy xương.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (p1:Population {name:"phụ huynh của các trẻ em dân tộc thiểu số, trẻ em được nhận làm con nuôi, hoặc trẻ em được hình thành thông qua thụ tinh trong ống nghiệm có thể được đặc biệt khuyến khích lưu giữ máu cuống rốn bởi vì theo thống kê thì rất khó khăn để tìm một người phù hợp trong những trường hợp này.", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (a1:Advice {name:"viện hàn lâm nhi khoa mỹ (aap) không khuyến khích lưu giữ máu cuống rốn cho những gia đình không có tiền sử bệnh. đó là bởi vì nghiên cứu vẫn chưa xác định được khả năng rằng một đứa trẻ sẽ cần các tế bào gốc của chính mình khi nào, cũng không khẳng định việc cấy ghép bằng cách sử dụng tế bào tự thân hay sử dụng tế bào từ một người thân hay người ngoài là an toàn hơn hoặc hiệu quả hơn.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"tuy nhiên, việc lưu giữ cần được xem xét nếu có một thành viên trong gia đình đang có nhu cầu hoặc có nhiều khả năng phải thực hiện việc cấy ghép tế bào gốc.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (det3:Detail {name:"hiện nay hầu hết mọi người ít sử dụng tế bào gốc, nhưng nghiên cứu việc sử dụng các tế bào gốc để điều trị bệnh đang được tiến hành và tương lai thì có vẻ đầy hứa hẹn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (a3:Advice {name:"nếu bạn quyết định lưu giữ máu cuống rốn của trẻ sơ sinh của bạn, hãy chắc chắn bạn đã thảo luận về các lựa chọn với bác sĩ sản khoa của bạn.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (det4:Detail {name:"dưới đây là một vài câu hỏi để xem xét trước khi lựa chọn một ngân hàng máu cuống rốn: ngân hàng máu cuống rốn có ổn định về tài chính không? có bao nhiêu mẫu được xử lý tại cơ sở? tôi có thể chọn chuyển đến cơ sở khác nếu tôi muốn? điều gì sẽ xảy ra với mẫu của tôi nếu cơ sở không còn hoạt động nữa? lệ phí hàng năm và chi phí duy trì liên quan là gì? lệ phí sẽ tăng, hay là cố định?", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"giống như ngân hàng máu của cộng đồng hoặc bệnh viện, ngân hàng máu cuống rốn được quản lý bởi cơ quan quản lý dược và thực phẩm mỹ (fda), là tổ chức đã lập nên các tiêu chuẩn quy định thu thập và lưu trữ máu cuống rốn trong tương lai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+
+
+;
+
+// ===== Article 227 | Chunk 7 | Hiến máu cuống rốn của bé =====
+MERGE (d:Topic {name:"Trữ máu cuống rốn", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Hiến máu cuống rốn của bé", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"với sự lựa chọn này, máu cuống rốn vẫn sẽ được thu thập sau khi con của bạn ra đời, nhưng nó sẽ được đánh dấu vô danh và gửi cho một ngân hàng công.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (rf1:RiskFactor {name:"tuy nhiên, nếu con của bạn hoặc một thành viên trong gia đình sau này bị một căn bệnh đòi hỏi phải cấy ghép tủy xương để điều trị, bạn sẽ không thể lấy lại được mẫu bạn đã tặng cho ngân hàng.", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (a1:Advice {name:"nếu bạn muốn tặng máu cuống rốn của con bạn, hãy liên hệ với chương trình tại địa phương của hội chữ thập đỏ mỹ hoặc một bệnh viện đại học địa phương, hoặc kiểm tra danh sách các ngân hàng được phép nhận mẫu của tổ chức chương trình hiến tặng tủy xương quốc gia.", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+MERGE (det2:Detail {name:"bạn cần viết bản cam kết trước khi bạn tặng máu cuống rốn của con bạn, việc này không tốn phí và quá trình này là hoàn toàn bí mật.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+MERGE (a2:Advice {name:"tại việt nam, bạn có thể tìm hiểu thông tin về trữ máu cuống rốn bằng cách hỏi bác sĩ sản khoa hoặc bệnh viện mà bạn đang đến khám thai. họ có thể cho bạn những lời khuyên về việc có cần trữ máu cuống rốn hay không và sẽ cung cấp cho bạn thông tin về các ngân hàng máu cuống rốn khác nhau để bạn có thể lựa chọn.", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a2)
+
+;
+
+// ===== Article 228 | Chunk 1 | Thai quá ngày dự sinh =====
+MERGE (d:Topic {name:"Thai quá ngày dự sinh", layer:"Topic"})
+MERGE (def1:Definition {name:"khi nào gọi là thai quá ngày dự sinh? một thai kỳ bình thường có tuổi thai đủ tháng khoảng 38 - 42 tuần. “thai quá kỳ hạn”, “thai kỳ kéo dài”, “thai quá ngày dự sinh” là những thuật ngữ được sử dụng để chỉ những thai hơn 42 tuần.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"thai quá ngày chiếm khoảng 5% thai kỳ.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 228 | Chunk 2 | Thai quá ngày dự sinh =====
+MERGE (d:Topic {name:"Thai quá ngày dự sinh", layer:"Topic"})
+MERGE (def1:Definition {name:"ngày dự sinh được xác định như thế nào? ngày dự sinh được xác định dựa vào ngày đầu tiên hành kinh của kỳ kinh cuối cùng và kích thước của tử cung (dạ con) trong giai đoạn sớm của thai kỳ.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"siêu âm cũng cung cấp cho bác sĩ thêm thông tin về ngày dự sinh.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"một cách đáng tin cậy để biết ngày dự sinh là đếm đến 40 tuần kể từ ngày đầu của kỳ kinh cuối.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (rf1:Detail {name:"tuy nhiên, nhiều phụ nữ không nhớ ngày kinh cuối cùng của mình và không biết mình có thai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(rf1)
+MERGE (rf2:Detail {name:"thêm vào đó, thường khó tính toán chính xác ngày dự sinh nếu như bạn có thai ngay sau khi bạn vừa ngưng sử dụng thuốc ngừa thai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(rf2)
+MERGE (ad1:Advice {name:"thăm khám vùng chậu trong giai đoạn sớm để xác định kích thước của tử cung có thể hữu ích.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(ad1)
+MERGE (ad2:Advice {name:"nếu bạn không chắc chắn về ngày kinh cuối cùng của mình hoặc tử cung của bạn không tương xứng với tuổi thai, siêu âm sẽ rất có giá trị để xác định ngày dự sinh.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(ad2)
+
+;
+
+// ===== Article 228 | Chunk 3 | Thai quá ngày dự sinh =====
+MERGE (sd1:Topic {name:"Thai quá ngày dự sinh", layer:"Topic"})
+MERGE (t1:Treatment {name:"kiểm tra tim thai (non-stress test), siêu âm nước ối/cử động thai, kiểm tra cổ tử cung", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (a1:Advice {name:"theo dõi cử động thai, đến bác sĩ ngay nếu giảm cử động", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+MERGE (t2:Treatment {name:"có thể đề nghị khởi phát chuyển dạ", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t2)
+
+
+;
+
+// ===== Article 228 | Chunk 4 | Thai quá ngày dự sinh =====
+MERGE (d:Topic {name:"Thai quá ngày dự sinh", layer:"Topic"})
+MERGE (a1:Advice {name:"cần làm gì khi thai quá ngày dự sinh 2 tuần? nhiều bác sĩ cho khởi phát chuyển dạ khi thai quá ngày dự sinh 2 tuần.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (comp1:Complication {name:"điều này được thực hiện nhằm tránh những biến chứng như suy thai, thai to gây sinh khó.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"suy thai xảy ra khi thai nhi không đủ oxy. khi đó, tim thai giảm và thai nhi không thể chịu đựng được cuộc chuyển dạ.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+
+;
+
+// ===== Article 228 | Chunk 5 | Thai quá ngày dự sinh =====
+MERGE (d:Topic {name:"Thai quá ngày dự sinh", layer:"Topic"})
+MERGE (t1:Treatment {name:"một số phụ nữ có thể được khởi phát chuyển dạ bằng oxytocin, một loại thuốc gây cơn co tử cung. thuốc được sử dụng qua đường tĩnh mạch, bắt đầu hiệu quả trong khoảng 1 - 2 giờ.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (t2:Treatment {name:"một số khác có thể được khởi phát chuyển dạ bằng cách làm vỡ màng ối. phương pháp này không gây đau, nhưng bạn sẽ thấy dịch thoát ra khỏi âm đạo khi màng ối bị phá vỡ.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+
+;
+
+// ===== Article 229 | Chunk 6 | Ngừa thai =====
+MERGE (d:Topic {name:"Ngừa thai", layer:"Topic"})
+MERGE (det1:Detail {name:"bạn có thể mang thai lại trong thời gian hậu sản này", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (c1:Cause {name:"mặc dù điều này ít có khả năng xảy ra nếu bạn cho bú mẹ hoàn toàn (cả ngày và đêm, không cho ăn dặm, không bú bình, ít nhất 8 lần một ngày, không bao giờ để hơn 3 giờ trong ngày hoặc 6 giờ vào ban đêm mà không cho bé bú), không có kinh, và con bạn dưới 6 tháng tuổi", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (a1:Advice {name:"nếu bạn muốn ngừa thai, hãy thảo luận với bác sĩ về các lựa chọn của bạn", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (pr1:Treatment {name:"các biện pháp ngừa thai có thể sử dụng gồm các phương pháp rào cản (như bao cao su hoặc màng ngăn), dụng cụ tử cung, thuốc viên, miếng dán, que cấy, hoặc thuốc tiêm", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(pr1)
+
+;
+
+// ===== Article 229 | Chunk 7 | Nuôi con bằng sữa mẹ =====
+MERGE (d:Topic {name:"Nuôi con bằng sữa mẹ", layer:"Topic"})
+MERGE (a1:Advice {name:"bạn cần ngủ đủ giấc, uống nhiều nước, nạp đủ chất dinh dưỡng, đặc biệt là khi bạn đang cho con bú", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"một cách dễ dàng để uống đủ nước là phải có một ly nước bất cứ nơi nào", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"ít nhất cho đến khi bạn đủ sữa cho con bú, cố gắng tránh cà phê", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (c1:Cause {name:"cà phê gây lợi tiểu, sẽ làm bạn dễ mất nước và đôi khi làm cho con bạn khó ngủ và quấy khóc", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (a4:Advice {name:"nếu bạn có bất kỳ vấn đề gì khi nuôi con bằng sữa mẹ, hãy thông báo với bác sĩ, nữ hộ sinh của bạn, hoặc một chuyên gia dinh dưỡng", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"phòng khám hoặc bệnh viện chuyên về nuôi con bằng sữa mẹ có thể tư vấn cho bạn làm thế nào để xử trí với bất kỳ vấn đề nuôi con bằng sữa mẹ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+MERGE (t1:Treatment {name:"chữa tắc ống dẫn sữa bằng cách massage vú, chăm sóc thường xuyên, cho bú sau khi tắm nước ấm, dùng gạc ấm suốt cả ngày", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (s1:Symptom {name:"bị sốt hay ớn lạnh hoặc vú bị đỏ (dấu hiệu nhiễm trùng/viêm vú)", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (t2:Treatment {name:"cần dùng thuốc kháng sinh nếu bị viêm vú", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+MERGE (a6:Advice {name:"gọi bác sĩ nếu có dấu hiệu viêm vú", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a6)
+MERGE (a7:Advice {name:"tiếp tục cho con bú hoặc hút sữa vào bình để cho bé bú", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a7)
+MERGE (a8:Advice {name:"bạn cần uống nhiều nước trong lúc này", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a8)
+MERGE (det1:Detail {name:"căng sữa – ngực sẽ bớt căng sữa hơn khi bạn cho con bú đều đặn, hoặc nếu bạn không cho bé bú, cơ thể của bạn ngừng sản xuất sữa – thường là trong vòng một vài ngày", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 229 | Chunk 8 | Chăm sóc vết may tầng sinh môn =====
+MERGE (d:Topic {name:"Chăm sóc vết may tầng sinh môn", layer:"Topic"})
+MERGE (a1:Advice {name:"tiếp tục ngồi tắm (nước ngập phần mông và trên hông) với nước lạnh trong vài ngày đầu tiên, sau đó dùng nước ấm", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"ép hai mông lại khi ngồi để tránh các mũi khâu bị kéo căng sẽ gây đau", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"sử dụng một bình xịt nước ấm để rửa vùng kín mỗi khi đi vệ sinh", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"lau cho khô", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"sau khi đi tiêu nên lau từ trước ra sau để tránh nhiễm trùng", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+MERGE (a6:Advice {name:"chườm lạnh để giảm sưng", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a6)
+MERGE (a7:Advice {name:"nói với bác sĩ khi bạn muốn sử dụng một loại thuốc kháng viêm như ibuprofen để giảm đau và viêm", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a7)
+
+;
+
+// ===== Article 229 | Chunk 10 | Trĩ và táo bón =====
+MERGE (d:Topic {name:"Trĩ và táo bón", layer:"Topic"})
+MERGE (a1:Advice {name:"tắm ngồi xen kẽ nước ấm và lạnh có thể giúp giảm bệnh trĩ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"ngồi trên một miếng nệm phồng cũng có thể giảm bệnh trĩ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"hỏi bác sĩ về thuốc làm mềm phân", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"không sử dụng thuốc nhuận trường, thuốc nhét hoặc dung dịch thụt tháo mà không có sự đồng ý của bác sĩ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"uống nhiều nước, ăn nhiều chất xơ, trái cây và rau quả", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+MERGE (a6:Advice {name:"tập thể dục có thể rất hữu ích", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a6)
+
+;
+
+// ===== Article 229 | Chunk 11 | Quan hệ tình dục sau sinh =====
+MERGE (d:Topic {name:"Quan hệ tình dục sau sinh", layer:"Topic"})
+MERGE (a1:Advice {name:"cơ thể của bạn cần thời gian để lành lặn. các bác sĩ thường khuyên bạn nên chờ đợi 4 - 6 tuần sau mới quan hệ tình dục để giảm nguy cơ nhiễm trùng, chảy máu và hở vết may.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"bắt đầu từ từ, hôn, ôm ấp, và những cử chỉ thân mật khác.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (s1:Symptom {name:"bạn có thể cảm nhận chất nhờn âm đạo giảm (điều này là do hormone và thường chỉ là tạm thời).", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (a3:Advice {name:"do đó bạn có thể sử dụng dung dịch bôi trơn.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"cố gắng tìm tư thế ít gây áp lực nhất lên các vùng đau và khiến bạn cảm thấy thoải mái nhất.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"tâm sự với chồng nếu bạn đang đau hay sợ hãi về sự đau đớn trong khi quan hệ. điều này có thể giúp cả hai bạn cảm thấy ít lo lắng và an toàn hơn khi nối lại đời sống tình dục của hai vợ chồng.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+
+;
+
+// ===== Article 229 | Chunk 12 | Tiêu tiểu không kiểm soát =====
+MERGE (d:Topic {name:"Tiêu tiểu không kiểm soát", layer:"Topic"})
+MERGE (a1:Advice {name:"bạn nên thực hiện các bài tập kegel, giúp tăng cường các cơ sàn chậu. hãy làm như bạn đang cố gắng để ngừng đi tiểu: co thắt cơ trong vài giây, sau đó thư giãn (bác sĩ có thể kiểm tra để chắc chắn rằng bạn thực hiện các động tác này một cách chính xác). lót băng vệ sinh trong khi làm. hãy cho bác sĩ biết về bất kỳ lần tiêu tiểu không kiểm soát nào mà bạn bị.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"tiêu tiểu không kiểm soát thường biến mất dần khi cơ thể của bạn trở lại trạng thái bình thường trước khi mang thai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 230 | Chunk 5 | Kỹ thuật Lamaze =====
+MERGE (d:Topic {name:"Kỹ thuật lamaze", layer:"Topic"})
+MERGE (def1:Definition {name:"kỹ thuật lamaze là phương pháp được sử dụng rộng rãi nhất ở hoa kỳ. triết lý lamaze cho rằng sinh nở mà là một quá trình tự nhiên và rằng phụ nữ nên được trao quyền thông qua giáo dục và hỗ trợ để có thể tiếp cận nó với sự tự tin.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (t1:Treatment {name:"các lớp học tập trung vào các kỹ thuật thư giãn và cũng khuyến khích người mẹ quen dần với tình trạng đau thông qua đào tạo và chuẩn bị (phương pháp này nhằm mục đích chuẩn bị về mặt tinh thần).", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"điều này giúp bà mẹ chuẩn bị tinh thần để chịu đựng được những đau đớn và căng thẳng của quá trình chuyển dạ (ví dụ, cách kiểm soát hơi thở) trái ngược với những phản ứng phản tác dụng (ví dụ như nín thở hoặc gồng cứng người).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (t2:Treatment {name:"kỹ thuật khác, chẳng hạn như chuyển hướng tập trung (ví dụ: sản phụ có thể được khuyến khích tập trung vào một vật đặc biệt mang theo từ nhà hoặc một bức ảnh) hoặc xoa bóp bởi một người hỗ trợ cũng được sử dụng để làm giảm nhận thức đau đớn của người phụ nữ.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+MERGE (a1:Advice {name:"các khóa học lamaze không ủng hộ hoặc chống lại việc sử dụng thuốc và các biện pháp can thiệp y tế thường xuyên trong quá trình chuyển dạ và sinh nở, thay vào đó, họ giáo dục các bà mẹ về các lựa chọn của họ để họ có thể đưa ra quyết định khi thời gian đến.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 230 | Chunk 6 | Phương pháp Bradley =====
+MERGE (d:Topic {name:"Phương pháp bradley", layer:"Topic"})
+MERGE (def1:Definition {name:"mục tiêu chính của phương pháp này là tránh các loại thuốc nếu không thật sự cần thiết.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"các chủ đề khác được nhấn mạnh bao gồm tầm quan trọng của dinh dưỡng tốt và tập thể dục trong thời gian mang thai, các kỹ thuật thư giãn (như hít thở sâu và tập trung vào các tín hiệu cơ thể) như một phương pháp đối phó với chuyển dạ, và trao quyền cho các bậc cha mẹ để họ tin vào bản năng của mình và trở thành người đóng vai trò chính trong quá trình sinh nở.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (pop1:Population {name:"bradley là phương pháp được lựa chọn cho nhiều phụ nữ sinh con tại nhà hoặc tại các đơn vị y tế khác (không phải trong bệnh viện).", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(pop1)
+
+;
+
+// ===== Article 231 | Chunk 1 | Khởi phát chuyển dạ =====
+MERGE (d:Topic {name:"Khởi phát chuyển dạ", layer:"Topic"})
+MERGE (def1:Definition {name:"chuyển dạ là quá trình giúp tống thai và nhau ra khỏi tử cung và bắt đầu một cuộc sống mới bên ngoài tử cung của bé.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (c1:Cause {name:"đôi khi, chuyển dạ không tự khởi phát được", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (t1:Treatment {name:"trong trường hợp này các bác sĩ phải sử dụng thuốc giúp khởi động quá trình chuyển dạ để người mẹ có thể sinh ngả âm đạo.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (def2:Definition {name:"quá trình này được gọi là “khởi phát chuyển dạ” hay còn gọi là “giục sanh”.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def2)
+
+;
+
+// ===== Article 231 | Chunk 2 | Khởi phát chuyển dạ =====
+MERGE (d:Topic {name:"Khởi phát chuyển dạ", layer:"Topic"})
+MERGE (c1:Cause {name:"nguyên nhân thông thường nhất phải khởi phát chuyển dạ là khi thai đã quá 2 tuần so với ngày dự sanh", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"nếu kéo dài quá ngày dự sanh, em bé có thể quá lớn và có thể cơ thể bạn sẽ không đủ chất dinh dưỡng cho bé", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (c2:Cause {name:"bạn đã bị vỡ ối nhưng vẫn chưa có cơn gò tử cung", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c2)
+MERGE (c3:Cause {name:"bạn bị cao huyết áp", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c3)
+MERGE (c4:Cause {name:"bạn bị nhiễm trùng trong tử cung", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c4)
+MERGE (c5:Cause {name:"bạn bị bệnh tiểu đường", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c5)
+MERGE (c6:Complication {name:"không đủ nước ối cho bé", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(c6)
+
+;
+
+// ===== Article 231 | Chunk 3 | Khởi phát chuyển dạ =====
+MERGE (d:Topic {name:"Khởi phát chuyển dạ", layer:"Topic"})
+MERGE (det1:Detail {name:"bác sĩ sẽ khởi phát chuyển dạ cho tôi như thế nào? có nhiều cách để khởi phát chuyển dạ.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"gần đến cuối thai kì, cổ tử cung (đường ra của tử cung) sẽ trở nên mềm, thậm chí nó có thể mở ra một chút.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"bác sĩ của bạn sẽ kiểm tra xem cổ tử cung của bạn có mềm và đã mở chưa.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (t1:Treatment {name:"nếu chưa, bác sĩ có thể đặt thuốc trong âm đạo gần cổ tử cung. thuốc này giúp cổ tử cung của bạn mềm lại và mở ra.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (t2:Treatment {name:"bác sĩ cũng có thể làm “vỡ ối” của bạn hoặc dùng một ngón tay để tách cổ tử cung khỏi màng ối xung quang đầu em bé. phương pháp này thường gây khởi phát chuyển dạ.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+MERGE (det4:Detail {name:"bác sĩ sẽ theo dõi bạn cẩn thận.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (t3:Treatment {name:"khi bạn đã sẵn sàng, bác sĩ sẽ bắt đầu cho một loại thuốc gọi là oxytocin. oxytocin sẽ khởi động cơn co tử cung, giúp những cơn co mạnh và đều hơn.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t3)
+
+;
+
+// ===== Article 231 | Chunk 4 | Khởi phát chuyển dạ =====
+MERGE (d:Topic {name:"Khởi phát chuyển dạ", layer:"Topic"})
+MERGE (comp1:Complication {name:"một trong những nguy cơ của khởi phát chuyển dạ là thuốc không hiệu quả. nếu sau khi dùng thuốc mà bạn vẫn không chuyển dạ, bạn có thể phải sinh mổ.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"thuốc có thể làm cho cơn co tử cung của bạn quá mạnh. nếu điều này xảy ra, bác sĩ sẽ ngưng thuốc và đợi một thời gian, hoặc mổ lấy thai.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"nếu bạn được chỉ định khởi phát chuyển dạ do các bệnh lý nội khoa, có thể còn có những nguy cơ khác nữa.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+
+;
+
+// ===== Article 231 | Chunk 5 | Khởi phát chuyển dạ =====
+MERGE (d:Topic {name:"Khởi phát chuyển dạ", layer:"Topic"})
+MERGE (a1:Advice {name:"tôi cần phải làm gì trong quá trình khởi phát chuyển dạ? đừng ăn quá nhiều trước khi đến bệnh viện. báo với bác sĩ nếu bạn cảm thấy quá đau.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"đôi lúc quá trình khởi phát chuyển dạ cần từ 2 - 3 ngày, nhưng thường thì cần ít thời gian hơn. nó có thể mất nhiều thời gian hơn nếu bạn được khởi phát chuyển dạ sớm hoặc đây là con đầu lòng của bạn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"cần nhớ rằng các thuốc trong quá trình khởi phát chuyển dạ có thể gây nên những cơn co rất mạnh và có thể làm rối loạn dạ dày.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"thường thì quá trình khởi phát chuyển dạ diễn ra êm đẹp và bạn có thể sanh ngả âm đạo.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 232 | Chunk 1 | Ngôi mông =====
+MERGE (d:Topic {name:"Ngôi mông", layer:"Topic"})
+MERGE (det1:Detail {name:"ngay trước khi sinh, hầu hết các bé đều xoay đầu xuống phần dưới của tử cung và đầu nằm trong khung chậu của mẹ, điều đó giải thích vì sao hầu hết trẻ sinh ra đời đều sổ phần đầu ra ngoài trước tiên", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (def1:Definition {name:"khi em bé ở vị trí như vậy trước khi sinh, ta gọi là sinh ngôi mông hoặc ngôi ngược", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det2:Detail {name:"đôi khi em bé xoay phần mông (hoặc chân) xuống dưới", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 232 | Chunk 2 | Ngôi mông =====
+MERGE (d:Topic {name:"Ngôi mông", layer:"Topic"})
+MERGE (c1:Cause {name:"bất thường về lượng nước ối xung quanh em bé có thể là nguyên nhân gây sinh ngôi mông", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (p1:Population {name:"những em bé sinh non có nhiều khả năng sinh ngôi mông", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"trong những trường hợp đa thai, nghĩa là từ hai thai trở lên, một hoặc cả hai bé có thể là ngôi mông", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p2)
+MERGE (det1:Detail {name:"nhiều em bé nằm ngược trong giai đoạn sớm của thai kỳ, nhưng hầu hết các bé sẽ xoay đầu lại ở giai đoạn cuối thai kỳ hoặc thời điểm gần lúc sinh", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"khi gần đến ngày sinh, bác sĩ sẽ cho bạn biết (thông qua khám lâm sàng, siêu âm hoặc cả hai) nếu em bé của bạn là ngôi mông", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 232 | Chunk 3 | Ngôi mông =====
+MERGE (d:Topic {name:"Ngôi mông", layer:"Topic"})
+MERGE (det1:Detail {name:"trẻ ngôi đầu thường được sinh thường ngả âm đạo an toàn hơn và dễ dàng hơn những trẻ ngôi mông", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"tuy nhiên, một số em bé sinh ngôi mông cũng có thể được sinh ra một cách an toàn qua ngả âm đạo", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 232 | Chunk 4 | Ngôi mông =====
+MERGE (d:Topic {name:"Ngôi mông", layer:"Topic"})
+MERGE (comp1:Complication {name:"trẻ sinh ngôi mông có thể gặp nhiều biến chứng hơn", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"một em bé ngôi mông có thể rất nhỏ hoặc có thể bị khuyết tật khi sinh ngôi mông", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"em bé ngôi mông được sinh ngả âm đạo có nhiều khả năng bị tổn thương trong hoặc sau khi sinh hơn so với các em bé được sinh ngôi đầu", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+MERGE (comp4:Complication {name:"em bé sinh ngược được sinh ngả âm đạo cũng có nhiều khả năng mắc dị tật bẩm sinh ở hông và xương đùi", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp4)
+MERGE (comp5:Complication {name:"các biến chứng ở dây rốn cũng dễ xảy ra ở trẻ ngôi mông sinh ngả âm đạo (ví dụ, dây rốn bị chèn ép khi sinh, có thể gây ra tổn thương thần kinh và não do thiếu oxy)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp5)
+
+;
+
+// ===== Article 232 | Chunk 5 | Ngôi mông =====
+MERGE (d:Topic {name:"Ngôi mông", layer:"Topic"})
+MERGE (t1:Treatment {name:"các bác sĩ thường chỉ định mổ lấy thai cho những thai kỳ ngôi mông (còn gọi là c-section)", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (comp1:Complication {name:"tuy nhiên củng có một số nguy cơ liên quan đến mổ lấy thai (như nhiễm trùng, chảy máu và thời gian nằm viện dài hơn cho cả mẹ và bé)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 232 | Chunk 6 | Ngôi mông =====
+MERGE (d:Topic {name:"Ngôi mông", layer:"Topic"})
+MERGE (a1:Advice {name:"quan trọng là phải khám thai định kỳ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"bác sĩ sẽ cho bạn biết khi em bé của bạn là ngôi mông và giúp hoạch định những việc cần làm", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (t1:Treatment {name:"một số bác sĩ sẽ chọn phương pháp mổ lấy thai", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (a3:Advice {name:"một số khác có thể hướng dẫn cho thai phụ những bài tập ở nhà để có thể giúp em bé xoay đầu xuống dưới", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (t2:Treatment {name:"một số bác sĩ cố gắng xoay em bé trong tử cung người mẹ bằng một thủ thuật gọi là ngoại xoay thai", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+MERGE (a4:Advice {name:"nếu phương pháp này thành công và em bé xoay xuống, có thể theo dõi sinh thường qua ngả âm đạo", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+
+;
+
+// ===== Article 232 | Chunk 7 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (def1:Definition {name:"ngoại xoay thai là một cách để biến một em bé từ ngôi mông thành ngôi đầu trong tử cung người mẹ.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"ngoại xoay thai có nghĩa là xoay em bé từ bên ngoài bụng của mẹ để nó chuyển sang vị trí đầu quay xuống dưới.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"bác sĩ sẽ sử dụng bàn tay của mình để xoay thai từ bên ngoài bụng.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 232 | Chunk 8 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (det1:Detail {name:"ngoại xoay thai được thực hiện vào cuối thai kỳ, khoảng sau tuần thứ 37 của thai kỳ.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 232 | Chunk 9 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (p1:Population {name:"phụ nữ mang thai kỳ bình thường", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (rf1:RiskFactor {name:"chảy máu âm đạo", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (rf2:RiskFactor {name:"nhau tiền đạo nằm gần hoặc che đường ra của tử cung (còn gọi là lỗ trong cổ tử cung)", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf2)
+MERGE (rf3:RiskFactor {name:"nonstress test không đáp ứng (nonstress test là đo tim thai và cơn co tử cung không có kích thích)", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf3)
+MERGE (rf4:RiskFactor {name:"thai nhỏ bất thường", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf4)
+MERGE (rf5:RiskFactor {name:"thiểu ối", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf5)
+MERGE (rf6:RiskFactor {name:"bất thường tim thai", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf6)
+MERGE (rf7:RiskFactor {name:"ối vỡ sớm", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf7)
+MERGE (rf8:RiskFactor {name:"song thai hoặc đa thai", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf8)
+
+;
+
+// ===== Article 232 | Chunk 10 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (comp1:Complication {name:"sinh non", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"ối vỡ sớm", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"mất máu cho bé hoặc mẹ", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+MERGE (comp4:Complication {name:"suy thai dẫn đến phải mổ lấy thai cấp cứu", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp4)
+MERGE (comp5:Complication {name:"em bé có thể trở lại vị trí ngôi mông sau khi thực hiện ngoại xoay thai", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp5)
+MERGE (det1:Detail {name:"mặc dù khả năng xảy ra những biến chứng này thấp, một số bác sĩ không thích sử dụng phương pháp ngoại xoay thai", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 232 | Chunk 11 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (det1:Detail {name:"ngoại xoay thai thường được thực hiện trong bệnh viện.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"trước khi tiến hành, bạn sẽ được siêu âm để xác định em bé là ngôi mông.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"bác sĩ cũng sẽ thực hiện nonstress test để đảm bảo rằng nhịp tim của em bé là bình thường.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"một số xét nghiệm máu sẽ được thực hiện và một bác sĩ gây mê sẽ được thông báo về ca xoay thai của bạn (nhằm đề phòng trường hợp bạn cần được mổ lấy thai khẩn cấp).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (t1:Treatment {name:"sau đó, bạn sẽ được tiêm thuốc qua đường tĩnh mạch để làm giãn cơ tử cung. thuốc này rất an toàn, không có nguy cơ cho em bé.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (det5:Detail {name:"bạn nằm ngửa trên giường, bác sĩ sẽ đặt tay của mình ở bên ngoài bụng của bạn. sau khi xác định vị trí đầu của em bé, bác sĩ sẽ nhẹ nhàng cố gắng xoay em bé về ngôi đầu.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+
+;
+
+// ===== Article 232 | Chunk 12 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (det1:Detail {name:"khi thủ thuật được hoàn tất, bác sĩ sẽ thực hiện nonstress test một lần nữa", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (a1:Advice {name:"nếu mọi thứ đều bình thường, bạn sẽ không phải ở lại bệnh viện", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (comp1:Complication {name:"nếu thủ thuật này không thành công, bác sĩ của bạn sẽ giải thích với bạn về khả năng sinh ngả âm đạo hoặc mổ lấy thai ngay lập tức", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (a2:Advice {name:"bác sĩ cũng có thể đề nghị lặp lại thủ thuật ngoại xoay thai", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+
+;
+
+// ===== Article 232 | Chunk 13 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (det1:Detail {name:"tỉ lệ thành công trung bình là khoảng 65%. thậm chí nếu thủ thuật thực hiện thành công lần đầu tiên, vẫn còn có một khả năng em bé sẽ quay trở lại vị trí ngôi mông.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"tỉ lệ thành công của ngoại xoay thai phụ thuộc vào nhiều yếu tố gồm: tuổi thai; lượng nước ối; số lần mang thai; cân nặng thai; vị trí bánh nhau; vị trí của em bé.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 233 | Chunk 1 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (def1:Definition {name:"chuyển dạ sinh non là chuyển dạ sớm trước 37 tuần của thai kỳ", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (comp1:Complication {name:"trẻ sinh quá sớm (sinh non) gặp nhiều vấn đề về sức khỏe lúc mới sinh, cũng như trong quá trình sống, hoặc cần phải nằm bệnh viện lâu hơn những trẻ sinh đủ tháng", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 233 | Chunk 2 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (a1:Advice {name:"nếu sản phụ có một trong những dấu hiệu chuyển dạ sinh non, thì nhanh chóng gọi bác sĩ là điều tốt nhất có thể làm", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (t1:Treatment {name:"có các phương pháp điều trị giúp ngừng chuyển dạ và kéo dài thai kỳ", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"nhận biết các dấu hiệu chuyển dạ sinh non có thể giúp tránh khỏi việc sinh quá sớm", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 233 | Chunk 3 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (s1:Symptom {name:"cơn co thắt ở bụng >= 1 cơn/10 phút", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"thay đổi màu sắc dịch tiết âm đạo hoặc chảy máu âm đạo", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"cảm giác như thai nhi bị đẩy xuống hay gọi là tình trạng gia tăng áp lực vùng chậu", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"đau lưng âm ỉ, liên tục", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"đau bụng cảm giác như khi hành kinh", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"đau bụng có thể kèm tiêu chảy", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s6)
+
+;
+
+// ===== Article 233 | Chunk 4 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (a1:Advice {name:"gọi ngay bác sĩ để tư vấn", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"đến ngay phòng khám hoặc bệnh viện", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"dừng các công việc đang làm, và nghỉ ngơi ít nhất 1 giờ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"uống hai đến ba ly nước, hoặc nước trái cây (không uống cafe hay soda)", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"nếu có những dấu hiệu xấu hơn, hoặc tiếp diễn thì gọi cho bác sĩ, hoặc đưa sản phụ đến bệnh viện", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+MERGE (a6:Advice {name:"nếu những dấu hiệu trên ngừng lại, hãy giúp sản phụ nghỉ ngơi thư giãn mỗi ngày", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a6)
+
+;
+
+// ===== Article 233 | Chunk 5 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (rf1:RiskFactor {name:"không phải lúc nào cũng biết chính xác nguyên nhân gây chuyển dạ sinh non. tuy nhiên có nhiều yếu tố làm sản phụ tăng nguy cơ chuyển dạ sinh non.", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (pr1:Prevention {name:"bỏ thuốc lá, bia rượu và uống thuốc theo đơn", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"kiểm soát cân nặng trong thai kỳ", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"ăn thức ăn đảm bảo sức khỏe và vận động nhẹ nhàng mỗi ngày", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr3)
+MERGE (pr4:Prevention {name:"điều trị bệnh hiện mắc như đái tháo đường, tăng huyết áp", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr4)
+MERGE (pr5:Prevention {name:"dự phòng nhiễm trùng, đảm bảo chủng ngừa các bệnh nhiễm trùng như cúm và ho gà", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr5)
+MERGE (pr6:Prevention {name:"xét nghiệm và điều trị nếu có nguy cơ mắc các bệnh truyền qua đường tình dục (std) như herpes sinh dục, HIV", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr6)
+MERGE (pr7:Prevention {name:"sử dụng các biện pháp tránh thai giữa 2 lần sinh để không mang thai lại quá sớm. thời gian tốt nhất giữa 2 lần sinh ít nhất 18 tháng", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr7)
+MERGE (a1:Advice {name:"giảm stress bằng cách trò chuyện, chia sẻ, có người giúp đỡ công việc nhà và dành thời gian riêng cho chính mình. nếu sản phụ lo lắng về công việc thì hãy trao đổi với sếp, nếu sản phụ cần hỗ trợ nhiều hơn thì hãy trao đổi với bác sĩ để được giúp đỡ.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 234 | Chunk 1 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (def1:Definition {name:"sinh non là sinh trước tuần 37 của thai kỳ", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (p1:Population {name:"trẻ sinh non cần nằm viện lâu hơn và có nhiều vấn đề sức khỏe hơn những trẻ sinh đủ tháng (trẻ được sinh từ tuần 39 đến tuần 40 của thai kỳ)", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 234 | Chunk 2 | Progesterone =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (a1:Advice {name:"cần trao đổi với bác sĩ để biết được progesterone có thể giúp giảm nguy cơ sinh non của bạn hay không", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 234 | Chunk 3 | Progesterone =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (def1:Definition {name:"progesterone là một hormone được cơ thể tạo ra.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (comp1:Complication {name:"nếu cơn co tử cung xảy ra trong giai đoạn đầu của thai kỳ có thể dẫn đến sẩy thai (là tình trạng thai chết trong tử cung trước 20 tuần).", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 234 | Chunk 4 | Progesterone =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (p1:Population {name:"điều trị bằng progesterone không áp dụng trong trường hợp đa thai (sinh đôi, sinh ba hay nhiều hơn) mà chỉ áp dụng cho đơn thai.", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 234 | Chunk 6 | Progesterone đặt âm đạo =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Progesterone đặt âm đạo", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (p1:Population {name:"sản phụ đủ cả 2 điều kiện trên", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (t1:Treatment {name:"bác sĩ có thể chỉ định progesterone đặt âm đạo, có thể dạng gel, dạng viên đạn hay viên nang", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"sản phụ có thể sử dụng một dụng cụ như một chiếc tăm bông để đẩy progresterone vào trong âm đạo", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"thời gian bắt đầu điều trị từ tuần thai thứ 24 và cứ tiếp tục cho đến tuần 37", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"progesteron đặt âm đạo không có tác dụng phụ cho cả sản phụ và thai nhi", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"progesterone đặt âm đạo không phải lúc nào cũng có hiệu quả trong ngăn ngừa sinh non, và không có tác dụng trong trường hợp đa thai", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det4)
+MERGE (a1:Advice {name:"nếu sản phụ mang đơn thai có cổ tử cung ngắn, cần trao đổi với bác sĩ về progesterone đặt âm đạo", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 234 | Chunk 7 | Progesterone tiêm =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Progesterone tiêm", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (p1:Population {name:"sản phụ đã có 1 lần sinh non đơn thai tự phát (tự phát nghĩa là tự chuyển dạ mà không cần dùng thuốc hay các phương pháp khác hoặc là ối vỡ sớm gây chuyển dạ) và mang đơn thai.", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (rf1:RiskFactor {name:"sản phụ có cả 2 đặc điểm trên (đã có 1 lần sinh non đơn thai tự phát và mang đơn thai).", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (a1:Advice {name:"trao đổi với bác sĩ về sự an toàn và tác dụng phụ của progesterone tiêm.", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"bắt đầu từ tuần 16 đến tuần 24 và 1 tuần 1 lần cho đến tuần 27.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"các mũi chích ngừa có sẵn theo 2 cách: loại biệt dược có tên là makena®; loại pha trộn (còn gọi là hợp chất) có ở các hiệu thuốc chuyên khoa.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"chỉ trong những trường hợp đặc biệt mới sử dụng loại này, như bị dị ứng với thành phần của makena. loại này sẽ được chi trả bởi công ty bảo hiểm (ở nước ngoài).", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"không phải lúc nào progesterone tiêm cũng hiệu quả trong ngừa sinh non. phương pháp này không làm giảm nguy cơ sinh non nếu đa thai và lần sinh non trước không phải tự phát.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det4)
+MERGE (s1:Symptom {name:"sản phụ có thể thấy khó chịu ở chỗ tiêm.", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (det5:Detail {name:"nghiên cứu trên những trẻ sơ sinh có mẹ sử dụng progesterone tiêm cho thấy không có sự gia tăng các khuyết tật bẩm sinh và vấn đề về sự phát triển trong 4 năm đầu đời. nhiều nghiên cứu đang được thực hiện để theo dõi cả mẹ và con.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det5)
+MERGE (t1:Treatment {name:"sử dụng progesterone có thể ngăn ngừa sinh non nếu sản phụ đã có 1 lần sinh non đơn thai tự phát (tự phát nghĩa là tự chuyển dạ mà không cần dùng thuốc hay các phương pháp khác hoặc là ối vỡ sớm gây chuyển dạ) và mang đơn thai. nếu sản phụ có cả 2 đặc điểm trên, bác sĩ có thể chỉ định progesterone tiêm.", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 235 | Chunk 1 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (def1:Definition {name:"chuyển dạ sinh non là chuyển dạ sớm trước 37 tuần của thai kỳ", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (t1:Treatment {name:"nếu sản phụ chuyển dạ sinh non, bác sĩ có thể đưa ra một số lời khuyên về điều trị, nhằm làm ngừng cơn gò tử cung, và ngăn ngừa các vấn đề sức khỏe cho sản phụ và thai nhi", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"việc điều trị này không đảm bảo chắc chắn sẽ ngừng được quá trình chuyển dạ sinh non. tuy nhiên, điều trị chuyển dạ sinh non có thể giúp kéo dài thai kỳ", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (a1:Advice {name:"sản phụ cần trao đổi với bác sĩ để chọn lựa phương pháp điều trị phù hợp", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 235 | Chunk 2 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (t1:Treatment {name:"corticosteroids trước sinh (acs)", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (t2:Treatment {name:"kháng sinh", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+MERGE (t3:Treatment {name:"thuốc giảm co tử cung", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t3)
+
+;
+
+// ===== Article 235 | Chunk 3 | Corticosteroids trước sinh (ACS) =====
+MERGE (d:Topic {name:"Corticosteroids trước sinh", layer:"Topic"})
+MERGE (comp1:Complication {name:"hội chứng suy hô hấp cấp", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"xuất huyết não thất", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"viêm ruột hoại tử", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+MERGE (def1:Definition {name:"suy hô hấp cấp là tình trạng ảnh hưởng đến hô hấp của trẻ sơ sinh", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (def2:Definition {name:"xuất huyết não thất là tình trạng chảy máu trong não", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def2)
+MERGE (def3:Definition {name:"viêm ruột hoại tử là bệnh lý ruột ở trẻ sơ sinh non tháng", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def3)
+
+;
+
+// ===== Article 235 | Chunk 4 | Kháng sinh =====
+MERGE (d:Topic {name:"Kháng sinh", layer:"Topic"})
+MERGE (p1:Population {name:"sản phụ và thai nhi", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (c1:Cause {name:"nhiễm liên cầu nhóm B", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"ối vỡ non (pprom)", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c2)
+MERGE (def1:Definition {name:"ối vỡ non xảy ra khi màng ối vỡ trước 37 tuần của thai kỳ", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+
+;
+
+// ===== Article 235 | Chunk 5 | Thuốc giảm co tử cung =====
+MERGE (d:Topic {name:"Thuốc giảm co tử cung", layer:"Topic"})
+MERGE (det1:Detail {name:"thuốc giảm co có thể trì hoãn chuyển dạ, thường kéo dài được vài ngày", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (t1:Treatment {name:"một loại thuốc giảm co là magiesium sulfate, không nên sử dụng quá 5 đến 7 ngày", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (comp1:Complication {name:"sử dụng thuốc kéo dài gây giảm nồng độ calcium và thai nhi có thể mắc các vấn đề về xương", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (rf1:RiskFactor {name:"một số thuốc giảm co có thể không an toàn khi sử dụng nếu sản phụ có các vấn đề về tim mạch hoặc tiền sản giật nặng", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (def1:Definition {name:"tiền sản giật là tình trạng bệnh lý xảy ra sau 20 tuần thai nghén", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (sym1:Symptom {name:"sản phụ có huyết áp cao, biểu hiện tại một số cơ quan như thận và gan với các dấu hiệu như có protein trong nước tiểu, rối loạn thị giác và đau đầu nhiều", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(sym1)
+
+;
+
+// ===== Article 235 | Chunk 6 | Chuyển dạ sinh non =====
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (t1:Treatment {name:"progesterone", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (t2:Treatment {name:"khâu eo cổ tử cung", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t2)
+MERGE (t3:Treatment {name:"nghỉ ngơi tại giường", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t3)
+
+;
+
+// ===== Article 235 | Chunk 7 | Progesterone =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (t1:Treatment {name:"điều trị với progesterone có thể dự phòng sinh non cho một số sản phụ nhất định.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (a1:Advice {name:"sản phụ cần trao đổi với bác sĩ để hiểu rõ hơn nếu điều trị progesterone có hiệu quả với sản phụ.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"trao đổi với bác sĩ để hiểu rõ hơn nếu cần điều trị progesterone.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+
+;
+
+// ===== Article 235 | Chunk 8 | Khâu eo cổ tử cung =====
+MERGE (d:Topic {name:"Khâu eo cổ tử cung", layer:"Topic"})
+MERGE (p1:Population {name:"khâu eo cổ tử cung được chỉ định ở một số sản phụ nhất định, như trong trường hợp sản phụ có cổ tử cung ngắn", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (a1:Advice {name:"trao đổi với bác sĩ để biết thêm thông tin", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 235 | Chunk 9 | Nghỉ ngơi tại giường =====
+MERGE (d:Topic {name:"Nghỉ ngơi tại giường", layer:"Topic"})
+MERGE (a1:Advice {name:"sản phụ nên nghỉ ngơi, thư giãn, thoải mái và nằm tại giường cho đến khi thai nhi sinh ra", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"bác sĩ yêu cầu sản phụ nên nghỉ ngơi một vài lần trong ngày hoặc nằm hoàn toàn tại giường", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+
+;
+
+// ===== Article 235 | Chunk 10 | Chuyển dạ sinh non =====
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (det1:Detail {name:"thuốc được sử dụng trong chuyển dạ sinh non có thể giúp cho sản phụ hoặc thai nhi, nhưng cũng có thể gây ra tác dụng phụ. tác dụng phụ sẽ khác nhau đối với từng người và phụ thuộc vào loại thuốc sử dụng. trao đổi thêm với bác sĩ để biết thêm thông tin.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 235 | Chunk 12 | Thuốc giảm co tử cung =====
+MERGE (d:Topic {name:"Thuốc giảm co tử cung", layer:"Topic"})
+MERGE (det1:Detail {name:"mỗi loại sẽ có tác dụng phụ khác nhau", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 235 | Chunk 13 | Chất chủ vận thụ thể Beta - adrenergic (terbutaline) =====
+MERGE (d:Topic {name:"Chất chủ vận thụ thể beta - adrenergic", layer:"Topic"})
+MERGE (s1:Symptom {name:"nhịp tim nhanh", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"đau ngực", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"nhịp tim nhanh hoặc không đều", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"khó thở", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"dịch trong phổi", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"tiêu chảy", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"buồn nôn (cảm giác khó chịu tại dạ dày)", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s7)
+MERGE (s8:Symptom {name:"nôn", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s8)
+MERGE (s9:Symptom {name:"chóng mặt", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s9)
+MERGE (s10:Symptom {name:"run hoặc lo lắng động kinh", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s10)
+MERGE (s11:Symptom {name:"sốt", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s11)
+MERGE (s12:Symptom {name:"đau đầu", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s12)
+MERGE (s13:Symptom {name:"tăng đường máu", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s13)
+MERGE (s14:Symptom {name:"hạ huyết áp", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s14)
+MERGE (s15:Symptom {name:"hạ kali máu", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s15)
+MERGE (p1:Population {name:"thai nhi", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"sản phụ", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p2)
+
+;
+
+// ===== Article 235 | Chunk 14 | Chẹn kênh canxi (nifedipine) =====
+MERGE (d:Topic {name:"Chẹn kênh canxi", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Nifedipine", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (p1:Population {name:"thai nhi", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (s1:Symptom {name:"táo bón", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"tiêu chảy", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"buồn nôn", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"chóng mặt hoặc ngất", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"đau đầu", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"hạ huyết áp", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"đỏ da", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s7)
+
+;
+
+// ===== Article 235 | Chunk 15 | Magnesium sulfate =====
+MERGE (d:Topic {name:"Magnesium sulfate", layer:"Topic"})
+MERGE (s1:Symptom {name:"mệt mỏi và buồn ngủ", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"thở chậm", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"yếu cơ", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s3)
+MERGE (comp1:Complication {name:"giảm nồng độ canxi và các vấn đề về xương, nếu sử dụng thuốc quá 5 đến 7 ngày", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (s4:Symptom {name:"các vấn đề hô hấp, dịch trong phổi", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"khô môi", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"mệt mỏi, yếu cơ", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"đau đầu, nhìn đôi, nói lắp", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s7)
+MERGE (comp2:Complication {name:"nhồi máu cơ tim", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (s8:Symptom {name:"buồn nôn hoặc nôn", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s8)
+MERGE (s9:Symptom {name:"đỏ da, đổ mồ hôi nhiều", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s9)
+
+;
+
+// ===== Article 235 | Chunk 16 | Thuốc kháng viêm nonsteroidal (NSAIDs) (Indomethacin) =====
+MERGE (sd1:Topic {name:"Thuốc kháng viêm nonsteroidal", layer:"Topic"})
+MERGE (s1:Symptom {name:"xuất huyết trong não hoặc tim", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (comp1:Complication {name:"còn ống động mạch (pda – bệnh tim bẩm sinh phổ biến ở trẻ sinh non tháng)", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (s2:Symptom {name:"vàng da là triệu chứng thường gặp. nguyên nhân do tăng bilirubin trong máu, làm cho da và kết mạc mắt có màu vàng", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (comp2:Complication {name:"các vấn đề của thận, như tạo quá ít nước tiểu", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"viêm ruột hoại tử (nec). đây là bệnh lý tại ruột của thai nhi", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp3)
+MERGE (comp4:Complication {name:"tăng áp lực phổi", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp4)
+MERGE (s3:Symptom {name:"chóng mặt", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"ợ nóng", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"buồn nôn hoặc nôn", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s5)
+MERGE (comp5:Complication {name:"thiểu ối là tình trạng sản phụ có quá ít nước ối. nước ối là dịch bao quanh thai nhi trong tử cung", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp5)
+MERGE (s6:Symptom {name:"viêm dạ dày", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"xuất huyết âm đạo", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s7)
+
+;
+
+// ===== Article 236 | Chunk 1 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (def1:Definition {name:"trẻ sinh non là trẻ sinh trước 37 tuần.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (s1:Symptom {name:"trẻ có thể có nhiều vấn đề về sức khỏe, và cần nằm viện lâu hơn những trẻ sinh đủ tháng.", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (p1:Population {name:"hàng năm, tỷ lệ trẻ sinh non ở hoa kỳ là 1/10.", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (s2:Symptom {name:"trẻ sinh non có thể có vấn đề về sức khỏe lâu dài, ảnh hưởng tới cuộc sống sau này.", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"trẻ sinh ra càng non tháng thì càng có nhiều vấn đề về sức khỏe.", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s3)
+MERGE (det1:Detail {name:"một số trẻ sinh non phải nằm ở đơn vị hồi sức sơ sinh (nicu) – là nơi chăm sóc những trẻ mới sinh có bệnh lý.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nhờ sự tiến bộ trong chăm sóc y tế, ngay cả trẻ sinh rất non tháng cũng có cơ hội sống hơn trước đây.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 236 | Chunk 2 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (comp1:Complication {name:"ngưng thở", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"hội chứng suy hô hấp (rds)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"xuất huyết não thất (ivh)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+MERGE (comp4:Complication {name:"còn ống động mạch (pda)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp4)
+MERGE (comp5:Complication {name:"viêm ruột hoại tử (nec)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp5)
+MERGE (comp6:Complication {name:"bệnh võng mạc ở trẻ sinh non (rop)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp6)
+MERGE (comp7:Complication {name:"vàng da", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp7)
+MERGE (comp8:Complication {name:"thiếu máu", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp8)
+MERGE (comp9:Complication {name:"loạn sản phế quản – phổi (bpd)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp9)
+MERGE (comp10:Complication {name:"nhiễm trùng", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp10)
+
+;
+
+// ===== Article 236 | Chunk 9 | Vàng da =====
+MERGE (d:Topic {name:"Vàng da", layer:"Topic"})
+MERGE (def1:Definition {name:"vàng da là hiện tượng mắt và da trẻ có màu vàng.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (c1:Cause {name:"trẻ bị vàng da do gan chưa phát triển đầy đủ hoặc hoạt động chưa tốt.", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+
+;
+
+// ===== Article 236 | Chunk 13 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (det1:Detail {name:"trao đổi với bác sĩ về tình trạng sức khỏe của trẻ. trẻ có thể xuất viện nếu đảm bảo sức khỏe, hoặc cần ở lại nicu để chăm sóc đặc biệt.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"trẻ chắc chắn được xuất viện khi: cân nặng trên 1800 gram (> 1,8 kg); có thể tự điều hòa thân nhiệt, không cần nằm lồng ấp. lồng ấp là vật kín, giúp giữ thân nhiệt cho trẻ sinh non; có thể bú hoặc uống sữa bình; cân nặng tăng đều (14 gram đến 28 gram); tự thở được.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"trẻ có thể cần các thiết bị đặc biệt, điều trị hoặc sử dụng thuốc sau khi xuất viện. bác sĩ sẽ hướng dẫn sản phụ chăm sóc trẻ như thế nào, hoặc có thể giúp sản phụ tìm nhóm hỗ trợ và nguồn lực khác xung quanh nơi ở, để giúp sản phụ chăm sóc trẻ.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 237 | Chunk 1 | Chuyển dạ sinh non =====
+MERGE (d:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (def1:Definition {name:"chuyển dạ sinh non là sự co bóp có chu kỳ của tử cung tạo ra một số biến đổi ở cổ tử cung, xảy ra trước 37 tuần của thai kỳ.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"những biến đổi này bao gồm: xóa (cổ tử cung ngắn lại), và mở (cổ tử cung mở ra giúp cho thai thi có thể lọt vào ống đẻ).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 237 | Chunk 2 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (def1:Definition {name:"sinh non là trẻ được sinh ra vào khoảng thời gian từ tuần thứ 20 đến trước tuần thứ 37 của thai kỳ", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+
+;
+
+// ===== Article 237 | Chunk 3 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (comp1:Complication {name:"thai quá non tháng có thể chưa được phát triển đầy đủ, và mang những vấn đề sức khỏe nghiêm trọng, như bại não có thể để lại di chứng suốt đời", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"một số di chứng khác, như giảm khả năng học tập, có thể xuất hiện muộn hơn, ở giai đoạn trẻ em hoặc khi đã trưởng thành", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (det1:Detail {name:"sinh non cần phải được quan tâm", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 237 | Chunk 4 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (det1:Detail {name:"trẻ sẽ có các nguy cơ về sức khỏe cao nhất nếu sinh ra trước 34 tuần. tuy nhiên, những trẻ sinh từ 34 tuần đến 37 tuần cũng tồn tại những nguy cơ về sức khỏe khác.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 237 | Chunk 5 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (rf1:RiskFactor {name:"tiền sử sinh non", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (rf2:RiskFactor {name:"cổ tử cung ngắn", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf2)
+MERGE (rf3:RiskFactor {name:"khoảng cách giữa những lần mang thai ngắn", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf3)
+MERGE (rf4:RiskFactor {name:"tiền sử phẫu thuật trên tử cung hoặc cổ tử cung", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf4)
+MERGE (rf5:RiskFactor {name:"một số biến chứng thai kỳ như đa thai hoặc xuất huyết âm đạo", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf5)
+MERGE (rf6:RiskFactor {name:"các yếu tố liên quan đến lối sống như cân nặng thấp trước lúc mang thai, hút thuốc lá, lạm dụng chất gây nghiện khi mang thai", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf6)
+MERGE (p1:Population {name:"phụ nữ dưới 19 tuổi hoặc trên 40, hoặc người có tiền sử sinh non", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 237 | Chunk 6 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (a1:Advice {name:"nếu sản phụ có tiền sử sinh non và đang có kế hoạch mang thai, cần đi khám trước khi thụ thai để đảm bảo sức khỏe tốt nhất cho quá trình mang thai", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"khi biết mình có thai, cần đảm bảo được chăm sóc trước sinh sớm", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"sản phụ nên được giới thiệu đến các bác sĩ có chuyên môn trong việc quản lý các thai kỳ nguy cơ cao", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (pr1:Prevention {name:"sản phụ có thể được chỉ định một số thuốc hoặc phương pháp điều trị nhằm dự phòng sinh non nếu có các yếu tố nguy cơ", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (det1:Detail {name:"điều trị cụ thể dựa trên tình trạng cá nhân và các yếu tố nguy cơ sinh non", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 237 | Chunk 7 | Chuyển dạ sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (s1:Symptom {name:"thay đổi tính chất dịch tiết âm đạo (nước, nhầy hoặc có máu)", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"gia tăng lượng dịch tiết", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"đau vùng chậu hoặc vùng bụng dưới", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"thường xuyên đau vùng thắt lưng", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"đau quặn bụng dưới, có hoặc không có tiêu chảy", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"thường xuyên có các cơn gò tử cung, có thể không đau", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"vỡ ối (nước ối chảy ra thành dòng hoặc chảy từng giọt)", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s7)
+
+;
+
+// ===== Article 237 | Chunk 8 | Chuyển dạ sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (s1:Symptom {name:"chẩn đoán chuyển dạ sinh non khi có sự thay đổi ở cổ tử cung", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (det1:Detail {name:"bác sĩ sản khoa có thể sẽ khám âm đạo để xem có sự thay đổi ở cổ tử cung hay không", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"sản phụ cần phải được theo dõi và đánh giá nhiều lần trong vài giờ", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"theo dõi cơn co tử cung như thế nào", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"bác sĩ sản khoa sẽ chỉ định một số xét nghiệm để xác định sản phụ có cần nằm viện hoặc chăm sóc đặc biệt ngay lúc đó hay không", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det4)
+MERGE (t1:Treatment {name:"bác sĩ có thể chỉ định siêu âm qua đường âm đạo để đo chiều dài cổ tử cung và định lượng nồng độ fetal fibronectin, một loại protein trong dịch tiết âm đạo", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (rf1:RiskFactor {name:"sự xuất hiện của protein này có liên quan đến sinh non", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf1)
+
+;
+
+// ===== Article 237 | Chunk 9 | Chuyển dạ sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"rất khó để bác sĩ có thể tiên lượng chuyển dạ sinh non tiến triển đến sinh non hay không", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (p1:Population {name:"chỉ 10% sản phụ có chuyển dạ sinh non sẽ đưa đến sinh non trong vòng 7 ngày tiếp theo", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (det2:Detail {name:"có khoảng 30% chuyển dạ sinh non sẽ tự dừng lại", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 237 | Chunk 10 | Chuyển dạ sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (t1:Treatment {name:"nếu chuyển dạ sinh non tiếp tục tiến triển, mục tiêu điều trị là đảm bảo tốt nhất sức khỏe của mẹ và thai nhi. khi đó, bác sĩ sẽ chỉ định một số thuốc để trì hoãn quá trình chuyển dạ như corticosteroids, magnesium sulfate và thuốc giảm gò tử cung.", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 237 | Chunk 11 | Corticosteroids =====
+MERGE (d:Topic {name:"Corticosteroids", layer:"Topic"})
+MERGE (p1:Population {name:"corticosteroids được sử dụng tốt nhất vào khoảng thời gian từ 24 tuần đến 34 tuần của thai kỳ, nhưng cũng có thể cân nhắc giữa 23 và 24 tuần của thai kỳ", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 237 | Chunk 12 | Magnesium sulfate =====
+MERGE (d:Topic {name:"Magnesium sulfate", layer:"Topic"})
+MERGE (comp1:Complication {name:"thuốc này có thể làm giảm nguy cơ bại não do sinh rất non", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (p1:Population {name:"thai dưới 32 tuần có chuyển dạ sinh non và có nguy cơ sinh non trong 24 giờ tiếp theo", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 237 | Chunk 13 | Thuốc giảm gò tử cung =====
+MERGE (d:Topic {name:"Thuốc giảm gò tử cung", layer:"Topic"})
+
+;
+
+// ===== Article 237 | Chunk 14 | Chuyển dạ sinh non =====
+MERGE (sd1:SubTopic {name:"Chuyển dạ sinh non", layer:"SubTopic"})
+MERGE (comp1:Complication {name:"nếu chuyển dạ không ngừng lại sẽ dẫn đến sinh non", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (p1:Population {name:"sản phụ và thai nhi sẽ được chăm sóc bởi một nhóm các bác sĩ chuyên khoa", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"đội ngũ này sẽ có một bác sĩ nhi sơ sinh, chuyên điều trị các vấn đề xảy ra ở trẻ mới sinh", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p2)
+MERGE (det1:Detail {name:"việc chăm sóc thai nhi phụ thuộc vào phương pháp sinh", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (p3:Population {name:"trẻ sơ sinh non tháng cần được chăm sóc đặc biệt ở đơn vị chăm sóc tích cực (nicu)", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p3)
+
+;
+
+// ===== Article 238 | Chunk 1 | Sinh cực non =====
+MERGE (d:Topic {name:"Sinh cực non", layer:"Topic"})
+MERGE (def1:Definition {name:"những trẻ sinh trước 32 tuần được gọi là “sinh cực non”", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"phần lớn thai kỳ kéo dài khoảng 40 tuần", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (p1:Population {name:"những trẻ sinh trong khoảng 32 và 37 tuần của thai kỳ được coi là sinh non", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 238 | Chunk 2 | Sinh cực non =====
+MERGE (d:Topic {name:"Sinh cực non", layer:"Topic"})
+MERGE (det1:Detail {name:"nếu bạn có nguy cơ sinh trẻ cực non, bác sỹ sẽ thảo luận với bạn về khả năng sống của đứa trẻ. khả năng sống này phụ thuộc vào nhiều yếu tố. bạn cần phải biết được tỉ lệ sống của những trẻ được sinh tại bệnh viện có cùng tuổi thai, giới tính và cân nặng với trẻ của bạn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (comp1:Complication {name:"trẻ sinh cực non, mặc dù sống sót, thường mang những vấn đề sức khỏe nghiêm trọng và kéo dài. những trẻ sanh cực non này thường khiếm khuyết về sự phát triển tâm thần hay thể chất, và cần có sự chăm sóc y tế đặc biệt.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 238 | Chunk 3 | Sinh cực non =====
+MERGE (d:Topic {name:"Sinh cực non", layer:"Topic"})
+MERGE (comp1:Complication {name:"hội chứng suy hô hấp (rds)", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"chảy máu trong não", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"nhiễm trùng", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+MERGE (comp4:Complication {name:"những vấn đề về hệ tiêu hóa", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp4)
+MERGE (comp5:Complication {name:"những vấn đề về kiểm soát nhiệt độ cơ thể", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp5)
+MERGE (comp6:Complication {name:"khó khăn trong giao tiếp và phát âm", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp6)
+MERGE (comp7:Complication {name:"những vấn đề về thị lực và thính lực", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp7)
+MERGE (comp8:Complication {name:"liệt não và những vấn đề về thần kinh khác", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp8)
+MERGE (comp9:Complication {name:"phát triển chậm", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp9)
+MERGE (det1:Detail {name:"trẻ càng sinh non càng có nguy cơ có các vấn đề về sức khỏe. những vấn đề này có thể ngắn hạn hay kéo dài", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 238 | Chunk 4 | Sinh cực non =====
+MERGE (d:Topic {name:"Sinh cực non", layer:"Topic"})
+MERGE (p1:Population {name:"những phụ nữ có nguy cơ sinh non", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (t1:Treatment {name:"một số thuốc có thể được sử dụng để giúp cho sự trưởng thành phổi (corticosteroids) hoặc kéo dài thai kỳ (tocolytics hay progesterone)", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (p2:Population {name:"nếu bạn đang ở khoảng 24 đến 34 tuần của thai kỳ và bác sỹ nghi ngờ rằng bạn có thể sinh trong tuần kế tiếp", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p2)
+MERGE (t2:Treatment {name:"bạn có thể sẽ được tiêm một liều corticosteroid", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t2)
+MERGE (det1:Detail {name:"loại thuốc này sẽ giúp đẩy nhanh sự phát triển phổi và các cơ quan khác của trẻ", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 238 | Chunk 5 | Tocolytics =====
+MERGE (d:Topic {name:"Tocolytics", layer:"Topic"})
+MERGE (p1:Population {name:"những thai phụ có các triệu chứng của dọa sinh non", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (t1:Treatment {name:"những thuốc này có thể làm chậm lại hoặc làm ngưng những cơn co tử cung và ngăn được sự chuyển dạ sanh trong 2 - 7 ngày", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 238 | Chunk 6 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (det1:Detail {name:"những trẻ sinh non được chuyển đến bệnh viện có khoa chăm sóc đặc biệt cho trẻ sơ sinh (nicu: đơn vị chăm sóc tích cực trẻ sơ sinh) thì có khả năng sống cao hơn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nicu ở mức cao cung cấp sự chăm sóc đặc biệt cho những trẻ sơ sinh có các vấn đề sức khỏe nghiêm trọng.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"khoa này được trang bị tốt hơn, có những bác sỹ và y tá được huấn luyện chuyên sâu và có kinh nghiệm trong việc chăm sóc trẻ sinh non.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"bạn và con của bạn thường sẽ được chăm sóc bởi một đội ngũ y bác sỹ. đội ngũ này có thể bao gồm một nhà sơ sinh học, một bác sỹ chuyên về điều trị các vấn đề sức khỏe của trẻ sơ sinh.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 238 | Chunk 7 | Surfactant =====
+MERGE (d:Topic {name:"Surfactant", layer:"Topic"})
+MERGE (def1:Definition {name:"surfactant là một chất giúp các túi khí được giữ ở trạng thái phồng trong phổi", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (p1:Population {name:"phổi bắt đầu tạo surfactant vào khoảng tuần thứ 23 của thai kỳ", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (c1:Cause {name:"sự thiếu surfactant là nguyên nhân chính của hội chứng suy hô hấp (rds) ở trẻ sinh non", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (t1:Treatment {name:"những trẻ sơ sinh cần đến liệu pháp thay thế surfactant thường bị đau ốm và cần sự chăm sóc tích cực", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"vì lí do này, liệu pháp surfactant chỉ được sử dụng ở những bệnh viện nơi mà đội ngũ nhân viên được đào tạo đặc biệt về liệu pháp này và cách chăm sóc những trẻ ốm nặng", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 238 | Chunk 8 | Sinh cực non =====
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (det1:Detail {name:"nếu không đáp ứng với điều trị, trẻ của bạn chỉ có cơ hội sống rất mong manh. đội ngũ bác sỹ và y tá sẽ nói chuyện với bạn và gia đình về những sự lựa chọn. có thể đứa bé sẽ không thể sống được nếu không có máy hô hấp nhân tạo. đó sẽ là một thời gian khó khăn đối với bạn và gia đình, nhưng việc tách đứa bé ra khỏi máy thở là điều cần thiết. đội ngũ bác sỹ sẽ giúp bạn quyết định điều gì tốt nhất cho trẻ.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 239 | Chunk 1 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (def1:Definition {name:"trẻ sinh thiếu tháng hay sinh non, chào đời sớm hơn trẻ đủ tháng tuổi. sinh non xảy ra khi quá trình mang thai diễn ra ít hơn 37 tuần. trẻ sinh đủ tháng được sinh ra trong khoảng 37 - 42 tuần kể từ kỳ kinh nguyệt cuối cùng của người mẹ.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+
+;
+
+// ===== Article 239 | Chunk 2 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (c1:Cause {name:"sinh non thường không rõ ràng và không trong tầm kiểm soát của mẹ", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"đôi khi do điều kiện sức khỏe hoặc lối sống", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (c3:Cause {name:"tiểu đường", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c3)
+MERGE (c4:Cause {name:"cao huyết áp", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c4)
+MERGE (c5:Cause {name:"bệnh tim", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c5)
+MERGE (c6:Cause {name:"bệnh thận", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c6)
+MERGE (c7:Cause {name:"nhiễm trùng", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c7)
+MERGE (c8:Cause {name:"thiếu dinh dưỡng", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c8)
+MERGE (c9:Cause {name:"chảy máu nhau thai bất thường", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c9)
+MERGE (c10:Cause {name:"tử cung giãn rộng khi mang đa thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c10)
+MERGE (c11:Cause {name:"hút thuốc", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c11)
+MERGE (c12:Cause {name:"rượu", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c12)
+MERGE (c13:Cause {name:"thuốc bất hợp pháp", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c13)
+MERGE (rf1:RiskFactor {name:"nguy cơ cao hơn ở phụ nữ <19 hoặc >40 tuổi", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (rf2:RiskFactor {name:"hoặc có tiền sử sinh non", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf2)
+
+;
+
+// ===== Article 239 | Chunk 3 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (c1:Cause {name:"nguyên nhân gây ra sinh non là không rõ ràng và không trong tầm kiểm soát của người mẹ", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"sinh non xảy ra bởi điều kiện sức khỏe và lối sống của người mẹ trong khi mang thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (c3:Cause {name:"mẹ bị bệnh tiểu đường", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c3)
+MERGE (c4:Cause {name:"mẹ bị cao huyết áp", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c4)
+MERGE (c5:Cause {name:"mẹ bị bệnh tim hoặc thận", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c5)
+MERGE (c6:Cause {name:"mẹ bị nhiễm trùng (đặc biệt là nhiễm trùng liên quan đến màng ối, bộ phận sinh dục và tiết niệu)", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c6)
+MERGE (c7:Cause {name:"mẹ bị thiếu dinh dưỡng trong khi mang thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c7)
+MERGE (c8:Cause {name:"mẹ bị chảy máu do vị trí bất thường của nhau thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c8)
+MERGE (c9:Cause {name:"sinh non có thể xảy ra do cấu trúc bất thường hoặc sự giãn rộng quá mức của tử cung khi mang nhiều hơn một thai (sinh đôi, sinh ba hoặc hơn)", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c9)
+MERGE (c10:Cause {name:"sinh non có thể xảy ra do sử dụng thuốc lá, rượu, hoặc các loại thuốc bất hợp pháp trong khi mang thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c10)
+MERGE (rf1:RiskFactor {name:"sinh non xảy ra thường xuyên hơn ở phụ nữ dưới 19 tuổi hoặc trên 40", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (rf2:RiskFactor {name:"sinh non xảy ra thường xuyên hơn ở người có tiền sử sinh non", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf2)
+MERGE (det1:Detail {name:"bất kỳ phụ nữ nào cũng có khả năng sinh non với nguyên nhân không rõ", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 239 | Chunk 4 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"trẻ sinh non có những nhu cầu đặc biệt. bởi vậy chăm sóc trẻ sinh non cũng khác đối với trẻ sinh đủ tháng. đó là lý do trẻ sinh non thường được chuyển tới phòng chăm sóc sơ sinh tích cực (neonatal intensive care unit - nicu).", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nicu được thiết kế để tạo cho trẻ một môi trường với ít căng thẳng và đáp ứng các nhu cầu cơ bản của trẻ như sự ấm áp, dinh dưỡng và sự bảo vệ để đảm bảo trẻ tăng trưởng và phát triển thích hợp.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"do những tiến bộ gần đây, hơn 90% trẻ sinh non có cân nặng 800 gram trở lên có thể sống bình thường. những trẻ nặng hơn 600 gram có 60% cơ hội sống sót, mặc dù tỉ lệ biến chứng lớn hơn.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 239 | Chunk 5 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (s1:Symptom {name:"trẻ sinh non thường thiếu lượng mỡ cần thiết để duy trì nhiệt độ cơ thể, thậm chí khi được ủ ấm trong chăn", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (t1:Treatment {name:"do đó máy sưởi được dùng để giữ ấm cho trẻ trong nicu", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"duy trì thân nhiệt trẻ trong phạm vi bình thường giúp trẻ phát triển nhanh hơn", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"trẻ sinh non có nhu cầu đặc biệt vì phát triển nhanh và hệ tiêu hóa chưa trưởng thành. trọng lượng 500–2500g. sữa mẹ là nguồn dinh dưỡng tốt nhất, nhưng thường cần nuôi bằng ống trước 32–34 tuần. có thể thêm dưỡng chất bổ sung, vitamin, canxi, phốt pho.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 239 | Chunk 6 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (det1:Detail {name:"trẻ sinh non có nhu cầu dinh dưỡng đặc biệt. bởi vì trẻ phát triển với tốc độ nhanh hơn so với những trẻ đủ tháng và hệ thống tiêu hóa của trẻ sinh non là chưa trưởng thành.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (p1:Population {name:"các bác sĩ nhi khoa theo dõi trọng lượng của trẻ sinh non bằng gram. trẻ sơ sinh đủ tháng thường nặng hơn 2.500 gram, trong khi trẻ sinh non có cân nặng dao động từ khoảng 500 đến 2.500 gram.", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (det2:Detail {name:"sữa mẹ là một nguồn dinh dưỡng tuyệt vời. nhưng trẻ sinh non thì quá non nớt để nuôi trực tiếp từ vú mẹ hoặc bình sữa cho đến khi trẻ được 32 đến 34 tuần tuổi. phần lớn trẻ sinh non phải được cho ăn từ từ để tránh nguy cơ hoại tử đường ruột (nec), một nhiễm trùng tiêu hóa hàng đầu. sữa mẹ và thức ăn cho các trẻ sinh non có thể được bơm thông qua một ống đi từ mũi hoặc miệng của trẻ vào dạ dày. sữa mẹ có ưu điểm hơn sữa bột vì có chứa nhiều protein giúp chống lại nhiễm trùng và thúc đẩy tăng trưởng. những dưỡng chất đặc biệt có thể được thêm vào sữa mẹ (hoặc sữa bột nếu không có sữa mẹ). vì trẻ sinh non có nhu cầu vitamin và khoáng chất cao hơn trẻ đủ tháng tuổi. hầu như tất cả trẻ sinh non được bổ sung canxi và phốt pho bằng cách thêm trực tiếp vào sữa mẹ hoặc bằng các loại sữa bột đặc biệt dành cho trẻ sinh non. dinh dưỡng và khoáng chất trong máu của trẻ, chẳng hạn như đường huyết, muối, kali, canxi, phốt pho, và magiê, được theo dõi thường xuyên và chế độ ăn uống của trẻ được điều chỉnh để giữ nồng độ các chất này trong phạm vi bình thường.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (comp1:Complication {name:"trẻ sinh non dễ bị nhiều biến chứng do cơ quan chưa trưởng thành", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (rf1:RiskFactor {name:"trẻ càng sinh sớm thì nguy cơ càng cao", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+
+;
+
+// ===== Article 239 | Chunk 7 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"trẻ sinh non dễ bị một số vấn đề, chủ yếu là do cơ quan nội tạng của trẻ không hoàn toàn sẵn sàng để tự hoạt động.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (comp1:Complication {name:"nhìn chung, trẻ càng sinh sớm thì nguy cơ biến chứng càng cao.", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 239 | Chunk 7 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (s1:Symptom {name:"tình trạng nồng độ bilirubin tăng cao, gây vàng da và vàng mắt", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (p1:Population {name:"xuất hiện ở 80% trẻ sinh non", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (comp1:Complication {name:"nếu bilirubin quá cao có thể gây tổn thương não", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (t1:Treatment {name:"điều trị bằng chiếu đèn xanh, đôi khi thay máu", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 239 | Chunk 8 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (s1:Symptom {name:"hiện tượng trẻ ngừng thở, nhịp tim giảm, da nhợt hoặc tím", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (c1:Cause {name:"do vùng điều khiển hô hấp trong não chưa hoàn chỉnh", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (p1:Population {name:"trẻ ≤30 tuần", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (t1:Treatment {name:"kích thích trẻ, dùng caffeine hoặc thiết bị thổi khí qua mũi", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 239 | Chunk 9 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (c1:Cause {name:"nguyên nhân: ít sản xuất hồng cầu, hồng cầu sống ngắn, lấy máu xét nghiệm nhiều", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (p1:Population {name:"trẻ <1000g", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (det1:Detail {name:"thiếu máu: tình trạng trẻ thiếu hồng cầu cung cấp oxy", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (t1:Treatment {name:"trẻ <1000g thường cần truyền máu", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 239 | Chunk 10 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (c1:Cause {name:"thường do nhiễm trùng, mất máu, mất nước hoặc thuốc mẹ dùng", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (comp1:Complication {name:"biến chứng huyết áp giảm thấp sau sinh", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (t1:Treatment {name:"điều trị bằng truyền dịch, thuốc hoặc truyền máu", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 239 | Chunk 11 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (s1:Symptom {name:"trẻ khó thở", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (c1:Cause {name:"phổi chưa sản xuất đủ surfactant", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (t1:Treatment {name:"mẹ uống thuốc trước sinh để kích thích sản xuất surfactant, trẻ được bơm surfactant và hỗ trợ máy thở", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"rối loạn hô hấp do phổi chưa sản xuất đủ surfactant khiến trẻ khó thở", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 239 | Chunk 12 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (p1:Population {name:"trẻ sinh non, đặc biệt <1000g", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (c1:Cause {name:"sinh quá sớm", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"suy hô hấp nặng", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (c3:Cause {name:"nhiễm trùng", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c3)
+MERGE (c4:Cause {name:"dùng oxy hoặc máy thở kéo dài", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c4)
+MERGE (det1:Detail {name:"bệnh phổi mạn tính ở trẻ sinh non, đặc biệt <1000g", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (comp1:Complication {name:"có thể có triệu chứng giống hen suyễn", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (det2:Detail {name:"nhiều trẻ cải thiện sau 2 năm", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 239 | Chunk 13 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (c1:Cause {name:"tình trạng trẻ dễ nhiễm bệnh do hệ miễn dịch yếu", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"có thể lây từ mẹ, khi sinh hoặc sau sinh", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (t1:Treatment {name:"điều trị bằng kháng sinh, thuốc kháng virus, kháng nấm", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (pr1:Prevention {name:"phòng ngừa bằng vệ sinh tay", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+
+;
+
+// ===== Article 239 | Chunk 14 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (c1:Cause {name:"mạch máu cần thiết trong thai kỳ không đóng sau sinh non", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (s1:Symptom {name:"gây máu dư chảy vào phổi, khó thở, suy tim", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (t1:Treatment {name:"điều trị bằng thuốc (indomethacin, ibuprofen) hoặc phẫu thuật kẹp ống", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 239 | Chunk 15 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (comp1:Complication {name:"bệnh võng mạc do sinh non: biến chứng mắt do mạch máu võng mạc phát triển bất thường, có thể gây tật khúc xạ hoặc mù", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (p1:Population {name:"khoảng 7% trẻ ≤1250g mắc", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (c1:Cause {name:"nguyên nhân chưa rõ, oxy chỉ là một yếu tố", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (a1:Advice {name:"trẻ cần được khám mắt trong nicu", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 239 | Chunk 16 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (comp1:Complication {name:"mắt của trẻ sinh non đặc biệt dễ bị tổn thương sau khi sinh mà một biến chứng nghiêm trọng là bệnh võng mạc do sinh non, đó là sự phát triển bất thường của mạch máu trong mắt của trẻ.", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (p1:Population {name:"khoảng 7% trẻ sơ sinh có trọng lượng 1.250 gram hoặc ít hơn khi sinh mắc bệnh này.", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (comp2:Complication {name:"hậu quả có thể từ nhẹ (cần phải đeo kính) đến nặng (mù).", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp2)
+MERGE (c1:Cause {name:"nguyên nhân của bệnh nay ở trẻ sinh non chưa được hiểu rõ ràng.", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"mặc dù trước đây nồng độ oxy cao được coi là nguyên nhân chính, gần đây các nghiên cứu sâu hơn đã chỉ ra rằng nồng độ oxy (quá thấp hoặc quá cao) chỉ là một yếu tố góp phần trong sự phát triển của bệnh võng mạc ở trẻ.", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (det1:Detail {name:"trẻ sinh non được khám mắt trong nicu để kiểm tra bệnh này.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 239 | Chunk 16 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"chăm sóc sau nicu: trẻ sinh non cần theo dõi thính giác, thị giác, phát triển thần kinh (vận động, ngôn ngữ, hành vi). một số trẻ cần vật lý trị liệu, ngôn ngữ trị liệu, và chăm sóc chuyên khoa nếu có biến chứng. gia đình đóng vai trò quan trọng.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 239 | Chunk 17 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Sinh cực non", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"trẻ sinh non thường cần chăm sóc đặc biệt sau khi rời nicu, thường một số bệnh viện có phòng chăm sóc cho trẻ sau phòng chăm sóc tích cực.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (a1:Advice {name:"ngoài việc đi khám nhi và chủng ngừa mà tất cả trẻ sơ sinh thường xuyên tiến hành, trẻ sinh non phải được khám thính giác và thị giác định kỳ.", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+MERGE (det2:Detail {name:"sự phát triển thần kinh của trẻ sinh non cần được chú ý đặc biệt, bao gồm cả việc đạt được các kỹ năng vận động như mỉm cười, ngồi, đi lại cũng như hoạt động của các cơ bắp.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"cách trẻ diễn đạt ngôn ngữ và phát triển hành vi cũng là những vấn đề quan trọng trong quá trình theo dõi.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det3)
+MERGE (t1:Treatment {name:"một số trẻ sinh non có thể cần ngôn ngữ trị liệu và vật lý trị liệu khi trẻ lớn lên.", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det4:Detail {name:"trẻ có tiền sử biến chứng trong nicu có thể cần được tiếp tục chăm sóc bởi các chuyên gia y tế.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det4)
+MERGE (a2:Advice {name:"sự hỗ trợ từ gia đình cũng rất quan trọng cho trẻ sinh non.", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a2)
+MERGE (det5:Detail {name:"chăm sóc cho trẻ sinh non thậm chí còn đòi hỏi khắt khe hơn chăm sóc cho một trẻ sơ sinh đủ tháng.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det5)
+MERGE (det6:Detail {name:"phòng chăm sóc trẻ cũng cần đặc biệt chú ý đến nhu cầu của gia đình trẻ.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det6)
+
+;
+
+// ===== Article 240 | Chunk 1 | Đếm cử động thai =====
+MERGE (d:Topic {name:"Đếm cử động thai", layer:"Topic"})
+MERGE (s1:Symptom {name:"thai nhi cử động trong tử cung là dấu hiệu cho thấy em bé khoẻ mạnh", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (p1:Population {name:"bà mẹ có thể cảm thấy em bé cử động vào khoảng giữa thai kỳ và nên cảm nhận cử động của bé cho đến khi sinh", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (a1:Advice {name:"đếm cử động thai chỉ thực hiện khi bà mẹ lo lắng về tình trạng sức khoẻ của bé", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 240 | Chunk 2 | Đếm cử động thai =====
+MERGE (d:Topic {name:"Đếm cử động thai", layer:"Topic"})
+MERGE (a1:Advice {name:"nằm nghiêng trái. đếm tất cả các cử động mà bạn cảm nhận trong 1 giờ. nếu có 10 cử động thai, bạn không cần đếm cử động thai nữa. mọi việc đều ổn với em bé. nếu có ít hơn 10 cử động thai, bạn đếm lại trong 1 giờ nữa. bạn nên đi lại, uống nước hoặc uống gì đó trước khi đếm lại cử động thai lần nữa. nếu cử động thai vẫn ít hơn 10 lần, bạn nên đi đến bệnh viện để kiểm tra.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 241 | Chunk 1 | Sự thụ thai =====
+MERGE (d:Topic {name:"Sự thụ thai", layer:"Topic"})
+MERGE (def1:Definition {name:"sự thụ thai là sự kết hợp của một trứng và một tinh trùng. đó là bước đầu tiên trong một chuỗi phức tạp của những sự kiện dẫn đến việc mang thai.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"sự thụ thai diễn ra trong ống dẫn trứng.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"trong một vài ngày tiếp theo, trứng và tinh trùng đã được hợp nhất di chuyển từ ống dẫn trứng đến lòng tử cung.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"tại đây, trứng được làm tổ và bắt đầu phát triển.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 241 | Chunk 2 | Nhau thai =====
+MERGE (d:Topic {name:"Nhau thai", layer:"Topic"})
+MERGE (det1:Detail {name:"cụm những tế bào tới tử cung này sẽ trở thành thai nhi và nhau thai", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (def1:Definition {name:"nhau thực hiện chức năng như một hệ thống nuôi dưỡng sự sống trong suốt quá trình mang thai", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det2:Detail {name:"nó cung cấp oxy, chất dinh dưỡng và kích thích tố (hormones) từ người mẹ đến bào thai", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 241 | Chunk 3 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"một quá trình mang thai bình thường kéo dài khoảng 280 ngày (40 tuần), đếm từ ngày đầu tiên của kỳ kinh nguyệt cuối cùng của bạn. tuy nhiên, một giai đoạn thai kỳ bình thường thì kéo dài ít nhất là 259 ngày đến nhiều nhất là 294 ngày (37 - 42 tuần). 40 tuần của thai kỳ được chia ra làm ba quý. mỗi quý kéo dài khoảng 12 – 13 tuần (hoặc khoảng 3 tháng).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 241 | Chunk 4 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt quá trình mang thai, thành tử cung của phụ nữ dày lên và mạch máu của thành tử cung nở lớn ra để nuôi dưỡng bào thai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"khi quá trình mang thai phát triển, tử cung giãn ra để tạo khoảng trống cho em bé lớn lên.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"tại thời điểm khi em bé được sinh ra, tử cung của bạn sẽ lớn hơn nhiều lần so với kích cỡ bình thường.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 241 | Chunk 5 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng đầu tiên của thai kỳ, những việc sau đây diễn ra: trứng thụ tinh bám vào thành tử cung. một số những tế nào này sẽ phát triển thành em bé. những tế bào khác sẽ tạo thành nhau; cánh tay và chân bắt đầu hình thành; não và tủy sống bắt đầu hình thành; tim và phổi bắt đầu phát triển. tim bắt đầu đập gần cuối của tháng này.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 241 | Chunk 6 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ hai của thai kỳ, những việc sau đây diễn ra: mí mắt hình thành, nhưng vẫn còn nhắm; tai trong bắt đầu phát triển; xương xuất hiện; mắt cá chân, cổ tay, ngón tay và ngón chân hình thành; bộ phận sinh dục bắt đầu phát triển. đến cuối tháng thứ hai, tất cả cơ quan và hệ thống cơ thể bắt đầu phát triển.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 241 | Chunk 7 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ ba của thai kỳ, những việc sau đây diễn ra: tất cả những phần nội tạng được hình thành, nhưng chưa được phát triển đầy đủ;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"ngón tay và ngón chân tiếp tục phát triển. những móng mềm bắt đầu hình thành;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"xương và bắp thịt bắt đầu phát triển;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"ruột bắt đầu hình thành;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"xương sống thì mềm và có thể uốn cong;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+MERGE (det6:Detail {name:"da thì gần như trong suốt;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det6)
+MERGE (det7:Detail {name:"bàn tay phát triển nhiều hơn bàn chân;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det7)
+MERGE (det8:Detail {name:"cánh tay thì dài hơn chân.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det8)
+
+;
+
+// ===== Article 241 | Chunk 8 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ tư của thai kỳ, những việc sau đây diễn ra: lông mày, lông mi và móng tay hình thành;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"cánh tay và chân có thể gập lại;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"những bộ phận sinh dục bên ngoài được hình thành;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"da nhăn lại và cơ thể được bao phủ với một lớp chất gây (vernix) và lông mịn (laguno);", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"nhau được hình thành đầy đủ;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+MERGE (det6:Detail {name:"tai ngoài bắt đầu phát triển;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det6)
+MERGE (det7:Detail {name:"thai nhi có thể nuốt và nghe;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det7)
+MERGE (det8:Detail {name:"cổ được hình thành;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det8)
+MERGE (det9:Detail {name:"thận hoạt động và bắt đầu sản xuất nước tiểu.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det9)
+
+;
+
+// ===== Article 241 | Chunk 9 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ năm của thai kỳ, những việc sau đây diễn ra: phản xạ mút phát triển. nếu bàn tay thả nổi gần miệng, thai nhi có thể mút ngón tay cái;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (s1:Symptom {name:"thai nhi thì hiếu động hơn. người mẹ có thể cảm thấy sự cử động của thai nhi;", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (det2:Detail {name:"thai nhi ngủ và thức thường xuyên;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"móng phát triển ở đầu của những ngón tay;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"túi mật bắt đầu sản xuất mật, được cần thiết để tiêu hóa chất dinh dưỡng;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"ở bé gái, trứng hình thành trong buồng trứng;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+MERGE (det6:Detail {name:"ở bé trai, tinh hoàn bắt đầu di chuyển từ bụng xuống bìu dái.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det6)
+
+;
+
+// ===== Article 241 | Chunk 10 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ sáu của thai kỳ, những việc sau đây diễn ra: lông tóc thật bắt đầu mọc; não phát triển nhanh; mắt bắt đầu mở; dấu vân tay và vân chân có thể được nhìn thấy; phổi hình thành đầy đủ, nhưng chưa hoạt động.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 241 | Chunk 11 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ bảy của thai kỳ, những việc sau đây diễn ra: mắt có thể mở và nhắm và cảm thấy sự thay đổi ánh sáng; lông mịn (laguno) bắt đầu biến mất; thai nhi đạp và duỗi tay chân; thai nhi có thể làm những cử động nắm và phản ứng lại với âm thanh.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 241 | Chunk 12 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ tám của thai kỳ, những việc sau đây diễn ra: với sự phát triển phần lớn được hoàn thiện, thai nhi tăng cân rất nhanh;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"xương cứng lại, nhưng sọ vẫn còn mềm và dễ uốn cho việc sinh đẻ;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"những vùng khác nhau của não đang hình thành;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"các nụ vị giác phát triển và thai nhi có thể nếm được vị ngọt và chua;", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"thai nhi bây giờ có thể nấc cụt.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+
+;
+
+// ===== Article 241 | Chunk 13 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"trong suốt tháng thứ chín của thai kỳ, những việc sau đây diễn ra: thai nhi thường xoay đầu xuống cho việc sinh đẻ; da thì ít nhăn hơn; phổi hoàn thiện và chuẩn bị tự hoạt động độc lập; các mô hình ngủ phát triển; thai nhi sẽ tăng khoảng 0.5 pound (0.22 kg) mỗi tuần trong tháng này.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 242 | Chunk 5 | Đếm số lần cử động thai nhi =====
+MERGE (d:Topic {name:"Đếm số lần cử động thai nhi", layer:"Topic"})
+MERGE (det1:Detail {name:"nếu bạn cảm thấy sự cử động của thai nhi giảm đi so với mức bình thường bạn nghĩ, bác sĩ có thể yêu cầu bạn theo dõi cử động thai nhi", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (def1:Definition {name:"đếm cử động thai nhi (còn được gọi là đếm số lần đạp) là một xét nghiệm bạn có thể thực hiện ở nhà", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det2:Detail {name:"có nhiều cách để đếm số lần đạp", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (a1:Advice {name:"bác sĩ của bạn sẽ cho bạn biết mức độ thường xuyên của việc theo dõi này và khi nào thì nói cho bác sĩ biết", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 242 | Chunk 6 | Test không đả kích =====
+MERGE (d:Topic {name:"Test không đả kích", layer:"Topic"})
+MERGE (def1:Definition {name:"test không đả kích theo dõi nhịp tim của thai nhi đáp ứng với cử động thai nhi theo thời gian. thuật ngữ không đả kích (nonstress) có nghĩa là trong lúc xét nghiệm, không dùng bất kì thứ gì để gây căng thẳng lên thai nhi.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+
+;
+
+// ===== Article 242 | Chunk 7 | Test không đả kích =====
+MERGE (d:Topic {name:"Test không đả kích", layer:"Topic"})
+MERGE (det1:Detail {name:"xét nghiệm này được thực hiện trong phòng mạch bác sĩ hoặc trong bệnh viện. nó được thực hiện khi bạn đang ngồi dựa lưng hay đang nằm và thường mất ít nhất 20 phút. một dây thắt lưng mang bộ phận cảm thụ để đo nhịp tim thai nhi sẽ được đeo quanh bụng bạn. nhịp tim thai được ghi lại bằng máy.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 242 | Chunk 8 | Test không đả kích =====
+MERGE (d:Topic {name:"Test không đả kích", layer:"Topic"})
+MERGE (det1:Detail {name:"nếu ≥ 2 lần tăng nhịp trong một khoảng thời gian 20 phút, kết quả sẽ là “phản ứng tốt” hoặc “yên tâm”.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"một kết quả phản ứng tốt nghĩa là tại lúc đó không có vấn đề gì.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"nếu kết quả là không phản ứng tốt thì nghĩa là không đủ lần tăng nhịp được phát hiện trong khoảng 40 phút. điều này mang nhiều ý nghĩa.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"nó có thể chứng tỏ đứa trẻ đang ngủ khi test được thực hiện. nếu vậy, test sẽ kéo dài thêm 40 phút nữa, hoặc là đứa trẻ sẽ được kích thích để cử động bằng âm thanh được phát ra ở trên bụng mẹ.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"một kết quả phản ứng không tốt có thể xuất hiện khi người phụ nữ đang sử dụng một số loại thuốc nhất định. hoặc cũng có thể là do thai nhi không được cung cấp đủ oxy.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+
+;
+
+// ===== Article 242 | Chunk 9 | Trắc đồ sinh vật lý =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý", layer:"Topic"})
+MERGE (def1:Definition {name:"bpp sử dụng một hệ thống thang điểm để đánh giá sự khỏe mạnh của thai nhi trong 5 lĩnh vực: 1. nhịp tim thai nhi; 2. cử động thở thai nhi; 3. cử động cơ thể thai nhi; 4. trương lực cơ thai nhi; 5. lượng nước ối.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"mỗi lĩnh vực sẽ được cho điểm từ 0 đến 2, tổng điểm cho 5 lĩnh vực tối đa là 10 điểm.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 242 | Chunk 10 | Trắc đồ sinh vật lý =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý", layer:"Topic"})
+MERGE (det1:Detail {name:"trong quá trình thực hiện siêu âm, một dụng cụ gọi là đầu dò chuyển đổi được di chuyển nhẹ nhàng trên bụng bạn khi bạn đang nằm hoặc ngồi dựa lưng. đầu dò này tạo ra một sóng âm mà sẽ dội lại khi gặp các tạng trong cơ thể bạn. đầu dò chuyển đổi tiếp nhận những âm dội này, rồi sẽ chuyển chúng sang hình ảnh chiếu trên màn hình để kỹ thuật viên quan sát", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 242 | Chunk 11 | Trắc đồ sinh vật lý =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý", layer:"Topic"})
+MERGE (det1:Detail {name:"kết quả đạt 8 - 10 điểm là yên tâm. nếu kết quả đạt 6 điểm thì khả nghi (không đủ kết luận yên tâm cũng như kết luận bất thường).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nếu bạn có một kết quả khả nghi, dựa vào thời gian mang thai của bạn, bạn có thể sẽ làm lại bpp trong 12 - 24 giờ tiếp theo, hoặc có thể bạn sẽ được quyết định phải sinh đứa trẻ.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"một kết quả đạt 4 điểm hoặc thấp hơn có nghĩa là cần phải thực hiện những xét nghiệm sâu hơn. đôi lúc, nó có nghĩa là đứa trẻ nên được sinh sớm hoặc ngay lập tức.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"cho dù đạt bao nhiêu điểm, nhưng nếu không đủ lượng nước ối có nghĩa là cần thực hiện xét nghiệm thường xuyên hơn hoặc có thể cần xem xét việc cho sinh đứa trẻ ngay.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 242 | Chunk 12 | Trắc đồ sinh vật lý cải tiến =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý cải tiến", layer:"Topic"})
+MERGE (det1:Detail {name:"bpp cải tiến bao gồm xét nghiệm không đả kích và đánh giá nước ối dựa vào siêu âm", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nó ít phức tạp hơn nhưng vẫn hữu ích như một bpp trong chẩn đoán tình trạng sức khỏe thai nhi", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 242 | Chunk 13 | Trắc đồ sinh vật lý cải tiến =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý cải tiến", layer:"Topic"})
+MERGE (det1:Detail {name:"nhịp tim thai được theo dõi giống như cách thực hiện của test không đả kích", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"siêu âm được dùng để đo lượng nước ối trong 4 vùng của tử cung", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 242 | Chunk 14 | Trắc đồ sinh vật lý cải tiến =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý cải tiến", layer:"Topic"})
+MERGE (s1:Symptom {name:"nếu kết quả là không phản ứng, có thể có nghĩa là thai nhi không được nhận đủ oxy", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (det1:Detail {name:"kết quả đánh giá lượng nước ối cho biết độ hoạt động tốt của nhau thai", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (c1:Cause {name:"nếu dịch ối ít, có thể là do có vấn đề về máu lưu thông trong nhau thai", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (a1:Advice {name:"test bpp đầy đủ hoặc test co thắt đả kích có thể cần thiết để khẳng định kết quả", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 242 | Chunk 15 | Test co thắt đả kích =====
+MERGE (d:Topic {name:"Test co thắt đả kích", layer:"Topic"})
+
+;
+
+// ===== Article 242 | Chunk 16 | Test co thắt đả kích =====
+MERGE (d:Topic {name:"Test co thắt đả kích", layer:"Topic"})
+
+;
+
+// ===== Article 242 | Chunk 17 | Test co thắt đả kích =====
+MERGE (d:Topic {name:"Test co thắt đả kích", layer:"Topic"})
+MERGE (det1:Detail {name:"nếu nhịp tim thai không giảm sau khi tử cung co thắt, thì kết quả là bình thường (âm tính).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nếu giảm nhịp tim thai sau hầu hết các đợt co thắt tử cung thì kết quả là dương tính (kết quả làm bác sĩ lo ngại).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"kết quả có thể không rõ ràng hoặc không thỏa mãn (khi không đủ co thắt để tạo ra một kết quả có ý nghĩa).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 242 | Chunk 18 | Siêu âm Doppler động mạch rốn =====
+MERGE (d:Topic {name:"Siêu âm doppler động mạch rốn", layer:"Topic"})
+MERGE (p1:Population {name:"siêu âm doppler được thực hiện kèm với những xét nghiệm khác khi thai nhi xuất hiện những dấu hiệu không phát triển tốt", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 242 | Chunk 19 | Siêu âm Doppler động mạch rốn =====
+MERGE (d:Topic {name:"Siêu âm doppler động mạch rốn", layer:"Topic"})
+MERGE (det1:Detail {name:"bạn sẽ ở tư thế nằm hoặc ngồi dựa lưng để thực hiện xét nghiệm này", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"một đầu dò chuyển đổi sẽ được di chuyển nhẹ nhàng trên bụng bạn để phát ra những sóng âm", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"hình ảnh của động mạch đang được kiểm tra sẽ xuất hiện trên màn hình máy tính", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 242 | Chunk 20 | Siêu âm Doppler động mạch rốn =====
+MERGE (d:Topic {name:"Siêu âm doppler động mạch rốn", layer:"Topic"})
+MERGE (det1:Detail {name:"một kết quả siêu âm bình thường là kết quả cho thấy lượng máu lưu thông bình thường trong động mạch rốn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (comp1:Complication {name:"nếu xét nghiệm cho thấy có vấn đề với máu lưu thông trong nhau thai, thì nó có nghĩa là có sự suy giảm lượng oxy cung cấp cho thai nhi.", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 243 | Chunk 3 | Cảm nhận cử động thai nhi =====
+MERGE (d:Topic {name:"Cảm nhận cử động thai nhi", layer:"Topic"})
+MERGE (s1:Symptom {name:"bé luôn cử động, nhưng bạn sẽ không cảm thấy gì cho đến 20 tuần tuổi", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"ban đầu, bạn sẽ chỉ cảm nhận được đó là những nhu động, và bạn có thể không biết đó chính là vận động của thai nhi", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"sau đó, bạn sẽ nhận ra được đó chính là cử động của bé", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"một số người khác có thể cảm nhận được những vận động của con bạn khi nó “đạp”", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s4)
+MERGE (det1:Detail {name:"những vận động đó sẽ giúp bé luyện tập chuẩn bị cho cuộc sống bên ngoài tử cung", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"hệ cơ sẽ khỏe hơn khi bé bắt đầu đạp mạnh, bú mút, và vận động nắm mở bàn tay", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"bé cũng bắt đầu tập vận động cơ mặt như cau mày, mỉm cười và liếc mắt", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 243 | Chunk 4 | Giới tính thai nhi =====
+MERGE (d:Topic {name:"Giới tính thai nhi", layer:"Topic"})
+MERGE (det1:Detail {name:"siêu âm có thể giúp xác định giới tính của bé trong quý hai của thai kỳ", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"do đó, nếu bạn được siêu âm, bạn có thể biết giới tính của bé nếu như bạn muốn biết điều đó", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"tuy nhiên, nên nhớ rằng bé phải nằm ở tư thế thích hợp thì bác sĩ hoặc kỹ thuật viên siêu âm mới nhìn thấy các cơ quan sinh dục của bé", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 244 | Chunk 1 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"từ khi được thụ tinh cho đến khi sinh, thai nhi sẽ qua nhiều giai đoạn phát triển khác nhau cho đến khi bé đã sẵn sàng để được sinh ra. sau đây chúng tôi xin giới thiệu những điều sẽ xảy ra trong 3 tháng đầu của con bạn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 244 | Chunk 2 | Thai kỳ =====
+MERGE (d:Topic {name:"Thai kỳ", layer:"Topic"})
+MERGE (det1:Detail {name:"thai kỳ được bắt đầu khi tinh trùng thụ tinh cho một trứng. do bạn sẽ không bao giờ biết được thời điểm quá trình thụ tinh xảy ra nên các bác sĩ sẽ tính tuổi thai dựa vào ngày đầu của chu kì kinh cuối cùng (kcc).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"bác sĩ sẽ chọn mốc 40 tuần để dự đoán ngày sinh (phần lớn thai phụ sẽ sinh từ 38 đến 40 tuần).", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"nhưng nếu như bạn được siêu âm thai trong giai đoạn sớm của thai kỳ thì bác sĩ sẽ dựa vào đó để tính tuổi thai cũng như dự đoán ngày sinh cho bạn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 244 | Chunk 3 | Thời kỳ phôi =====
+MERGE (d:Topic {name:"Thời kỳ phôi", layer:"Topic"})
+MERGE (def1:Definition {name:"giai đoạn này được gọi là thời kì phôi", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"ngay sau quá trình thụ tinh, thai nhi sẽ trải qua một giai đoạn phát triển rất nhanh", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"giai đoạn này kéo dài từ tuần thứ 5 cho đến tuần thứ 10 của thai kỳ", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"trong giai đoạn này em bé được gọi là phôi", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 244 | Chunk 4 | Thời kỳ phôi =====
+MERGE (d:Topic {name:"Thời kỳ phôi", layer:"Topic"})
+MERGE (det1:Detail {name:"trong giai đoạn này, các cơ quan quan trọng và các phần cơ thể của thai nhi sẽ bắt đầu hình thành. các tế bào của phôi (được gọi là các tế bào mầm của phôi) sẽ nhân lên và phát triển thành hàng trăm loại tế bào giúp hình thành toàn bộ cơ thể.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 244 | Chunk 5 | Nhau thai =====
+MERGE (d:Topic {name:"Nhau thai", layer:"Topic"})
+MERGE (det1:Detail {name:"nhau thai cũng được hình thành và phát triển trong giai đoạn này", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"bánh nhau sẽ cung cấp các chất dinh dưỡng, khí oxy và nước từ cơ thể của bạn cho thai nhi thông qua dây rốn", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"bánh nhau cũng giúp thai nhi thải các chất thải", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"bánh nhau cũng có thể loại bỏ phần lớn (không phải là tất cả) các chất độc có trong cơ thể của bạn", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 244 | Chunk 6 | Túi ối =====
+MERGE (d:Topic {name:"Túi ối", layer:"Topic"})
+MERGE (det1:Detail {name:"túi ối cũng phát triển trong giai đoạn này. túi này chứa nước ối, nằm trong tử cung và bao quanh để bảo vệ thai nhi.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 244 | Chunk 13 | Giai đoạn thai =====
+MERGE (d:Topic {name:"Giai đoạn thai", layer:"Topic"})
+MERGE (det1:Detail {name:"sau giai đoạn phôi là giai đoạn thai, và em bé được gọi là một thai nhi", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"trong giai đoạn thai (bắt đầu từ tuần thứ 11 cho đến khi kết thúc thai kỳ), thai nhi sẽ lớn rất nhanh về kích thước và cân nặng, các cơ quan cũng như các phần cơ thể tiếp tục phát triển", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"hai tuần cuối của quý đầu cũng là thời kì đầu của giai đoạn thai. trong hai tuần này, móng của ngón tay, ngón chân bắt đầu hình thành, và thận cũng bắt đầu làm việc", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"cuối tuần thứ 12, tức là cuối quý 1, thai nhi đã dài gấp 3 lần trước đó, vào khoảng 3 inches (7.62 cm)", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 245 | Chunk 6 | Sinh non =====
+MERGE (d:Topic {name:"Sinh non", layer:"Topic"})
+MERGE (det1:Detail {name:"ngày sinh dự đoán là một dự đoán. chỉ có 5% các trường hợp sinh vào đúng ngày đó.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"bé đã trưởng thành hoàn toàn nếu như được sinh ra trong tuần thứ 37 hoặc sau đó.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"nếu đó là con đầu lòng thì bạn thường sẽ sinh trước ngày sinh dự đoán.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"thậm chí nếu mà bé được sinh ra vào những tuần đầu của quý ba thì bé vẫn thường được sống sót.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+MERGE (det5:Detail {name:"tuy nhiên, thời gian ở trong tử cung càng lâu thì bé càng khỏe mạnh.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det5)
+
+;
+
+// ===== Article 246 | Chunk 4 | Tiêm phòng cúm =====
+MERGE (d:Topic {name:"Tiêm phòng cúm", layer:"Topic"})
+MERGE (det1:Detail {name:"bạn không thể bị cúm sau khi tiêm phòng cúm", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 246 | Chunk 5 | Tiêm phòng cúm =====
+MERGE (d:Topic {name:"Tiêm phòng cúm", layer:"Topic"})
+MERGE (det1:Detail {name:"tiêm phòng cúm không giúp cơ thể chống lại tất cả các chủng vi-rút cúm", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (c1:Cause {name:"các chuyên gia vẫn đang xác định các chủng vi-rút có khả năng gây bệnh cao nhất trong mùa tiếp theo", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (det2:Detail {name:"sau khi tiêm phòng, cơ thể sẽ mất khoảng hai tuần để sản sinh các kháng thể giúp bảo vệ cơ thể, do đó nếu bạn tiếp xúc với vi-rút cúm trong giai đoạn này thì vẫn có thể nhiễm bệnh", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (pr1:Prevention {name:"đó là lý do tại sao phải tiêm phòng trước khi bắt đầu vào mùa cúm", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (det3:Detail {name:"cần lưu ý rằng tiêm phòng cúm không bảo vệ cơ thể khỏi cảm lạnh thông thường hoặc các loại vi-rút đường hô hấp khác", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"do đó, dù bạn đã tiêm phòng cúm, bạn vẫn có thể mắc bệnh về đường hô hấp khác", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 246 | Chunk 6 | Tiêm phòng cúm =====
+MERGE (d:Topic {name:"Tiêm phòng cúm", layer:"Topic"})
+MERGE (s1:Symptom {name:"một số người có thể bị sốt nhẹ, đau đầu và đau cơ từ 1 đến 2 ngày sau khi tiêm phòng cúm", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (det1:Detail {name:"dù vậy, những tác dụng phụ này chỉ là tạm thời", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (comp1:Complication {name:"cúm là một bệnh nghiêm trọng, ảnh hưởng tới cả mẹ lẫn bé", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+;
+
+// ===== Article 246 | Chunk 7 | Tiêm phòng cúm =====
+MERGE (d:Topic {name:"Tiêm phòng cúm", layer:"Topic"})
+MERGE (p1:Population {name:"thai phụ", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (a1:Advice {name:"có một số vấn đề thai phụ cần cân nhắc trước khi tiêm phòng cúm.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"tiền sử dị ứng trứng, kể cả phát ban đều không phải là lý do để tránh tiêm phòng cúm.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (rf1:RiskFactor {name:"nếu bạn bị phản ứng dị ứng nghiêm trọng sau lần tiêm phòng cúm trước đó", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (a2:Advice {name:"bạn không nên tiêm phòng cúm lần nữa.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"bạn cần trao đổi với bác sĩ sản phụ khoa về bất kỳ phản ứng nào mà bạn gặp phải với các lần tiêm phòng cúm trước đây.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+
+;
+
+// ===== Article 246 | Chunk 8 | Tiêm phòng cúm =====
+MERGE (d:Topic {name:"Tiêm phòng cúm", layer:"Topic"})
+MERGE (c1:Cause {name:"thimerosal là một chất bảo quản có chứa thủy ngân được sử dụng với lượng rất nhỏ trong một số loại vắc-xin cúm", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"không có bằng chứng khoa học nào cho thấy thimerosal gây ra các vấn đề về sức khỏe của thai phụ cũng như sự phát triển của thai nhi", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"hiện nay cũng đã có các loại vắc-xin cúm không chứa thimerosal", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (p1:Population {name:"phụ nữ mang thai có thể tiêm phòng cúm có hoặc không có loại chất bảo quản này", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 246 | Chunk 11 | Tiêm phòng cúm =====
+MERGE (d:Topic {name:"Tiêm phòng cúm", layer:"Topic"})
+MERGE (a1:Advice {name:"hãy thông báo với bác sĩ sản khoa để cập nhật hồ sơ bệnh án, bao gồm cả hồ sơ tiêm phòng cúm của bạn", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 248 | Chunk 4 | Vaccine ho gà =====
+MERGE (d:Topic {name:"Vaccine ho gà", layer:"Topic"})
+MERGE (p1:Population {name:"thai phụ", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (comp1:Complication {name:"bệnh ho gà có thể đe dọa đến tính mạng trẻ sơ sinh - khoảng một nửa trẻ sơ sinh chết vì ho gà trong bệnh viện", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (p2:Population {name:"trẻ sơ sinh", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p2)
+MERGE (p3:Population {name:"người lớn, bao gồm cả người già, người tiếp xúc nhiều với trẻ em", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p3)
+MERGE (det1:Detail {name:"nhiều bệnh phòng ngừa bằng vaccine hiếm thấy ở mỹ nhưng vẫn còn phổ biến ở các khu vực khác trên thế giới", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (a1:Advice {name:"một thai phụ có kế hoạch du lịch nước ngoài nên trao đổi với bác sĩ về các loại vaccine nào nên tiêm", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 248 | Chunk 11 | Mang thai =====
+MERGE (d:Topic {name:"Mang thai", layer:"Topic"})
+MERGE (a1:Advice {name:"trước khi mang thai, thai phụ nên chủng ngừa đầy đủ tất cả các loại vaccine dành cho người lớn. điều này sẽ giúp bảo vệ thai phụ và thai nhi. đồng thời, thai phụ cũng nên tham vấn bác sĩ về vaccine và đảm bảo đã tiêm phòng đầy đủ.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 248 | Chunk 14 | Vaccine an toàn cho phụ nữ cho con bú =====
+MERGE (d:Topic {name:"Vaccine an toàn cho phụ nữ cho con bú", layer:"Topic"})
+MERGE (p1:Population {name:"phụ nữ cho con bú", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+;
+
+// ===== Article 251 | Chunk 1 | Vô sinh - hiếm muộn =====
+MERGE (d:Topic {name:"Vô sinh - hiếm muộn", layer:"Topic"})
+MERGE (c1:Cause {name:"nguyên nhân không thể mang thai có thể đến từ người chồng, người vợ hoặc cả hai", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"tại sao chúng tôi gặp khó khăn khi mang thai", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"khi một cặp vợ chồng gặp khó khăn khi mang thai, các bác sĩ thường cho làm các xét nghiệm cả hai vợ chồng để cố gắng tìm ra nguyên nhân", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"nhưng ngay cả khi xét nghiệm đôi khi cũng không tìm ra được nguyên nhân tại sao cặp vợ chồng lại không thể mang thai", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+
+;
+
+// ===== Article 251 | Chunk 2 | Xét nghiệm vô sinh dành cho nam giới =====
+MERGE (d:Topic {name:"Xét nghiệm vô sinh dành cho nam giới", layer:"Topic"})
+MERGE (det1:Detail {name:"đầu tiên, bác sĩ sẽ hỏi về tiền sử sức khỏe và đời sống tình dục và cho làm một kiểm tra", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"bác sĩ sẽ chỉ định xét nghiệm “phân tích tinh dịch”. xét nghiệm này có thể kiểm tra số lượng tinh trùng và tinh trùng của bạn có khỏe mạnh không", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 251 | Chunk 3 | Xét nghiệm vô sinh dành cho nam giới =====
+MERGE (d:Topic {name:"Xét nghiệm vô sinh dành cho nam giới", layer:"Topic"})
+MERGE (det1:Detail {name:"ngoài ra còn có các xét nghiệm khác như: xét nghiệm máu – một số xét nghiệm máu kiểm tra nồng độ hormone nam. nồng độ hormone bất thường có thể khiến người phụ nữ không thể mang thai. và có thể kiểm tra xem bạn có mắc bệnh lý di truyền nào ảnh hưởng đến quá trình thụ thai không.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"siêu âm – xét nghiệm hình ảnh này cho thấy hình ảnh bên trong cơ thể và có thể kiểm tra xem cơ quan sinh dục có bất thường hay không.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"xét nghiệm nước tiểu – xét nghiệm nước tiểu có thể kiểm tra xem tinh trùng có di chuyển sai hướng và đi ngược vào bàng quang thay vì xuất tinh ra khỏi dương vật.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"sinh thiết – sinh thiết có thể được đặt ra nếu xét nghiệm nồng độ tinh trùng cực thấp hoặc bằng 0. khi sinh thiết, bác sĩ sẽ lấy một mẫu mô nhỏ từ bên trong tinh hoàn. sau đó, mẫu mô được quan sát dưới kính hiển vi để kiểm tra xem có tinh trùng không.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 251 | Chunk 4 | Xét nghiệm vô sinh dành cho nữ giới =====
+MERGE (sd1:Topic {name:"Xét nghiệm vô sinh dành cho nữ giới", layer:"Topic"})
+MERGE (det1:Detail {name:"đầu tiên, bác sĩ sẽ hỏi bạn về sức khỏe, chu kỳ kinh nguyệt và đời sống tình dục của bạn. bác sĩ sẽ cho làm một kiểm tra.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (c1:Cause {name:"nồng độ hormone bất thường có thể là nguyên nhân gây vô sinh.", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"xét nghiệm máu cũng có thể được thực hiện để kiểm tra về di truyền vì đó cũng có thể gây vô sinh.", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (det2:Detail {name:"xét nghiệm rụng trứng bao gồm nhiều xét nghiệm khác nhau để kiểm tra xem phụ nữ có rụng trứng hay không. rụng trứng là khi trứng được giải phóng ra từ buồng trứng di chuyển vào ống dẫn trứng. nó cần phải xảy ra để một người phụ nữ có thể mang thai.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 251 | Chunk 5 | Quá trình thụ thai =====
+MERGE (d:Topic {name:"Quá trình thụ thai", layer:"Topic"})
+MERGE (c1:Cause {name:"người phụ nữ phải quan hệ tình dục với người đàn ông vào khoảng thời gian rụng trứng (giải phóng một trứng từ buồng trứng)", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"tinh trùng của người đàn ông phải bơi lên âm đạo, vào tử cung và di chuyển lên ống dẫn trứng", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c2)
+MERGE (c3:Cause {name:"khi tinh trùng gặp trứng thì ít nhất một tinh trùng phải xuyên qua và đi vào bên trong lớp vỏ ngoài của trứng", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c3)
+MERGE (def1:Definition {name:"quá trình này được gọi là thụ tinh", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (c4:Cause {name:"noãn di chuyển về phía tử cung", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c4)
+MERGE (c5:Cause {name:"phôi nang bám vào thành tử cung và làm tổ", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c5)
+
+;
+
+// ===== Article 251 | Chunk 6 | Xét nghiệm vô sinh dành cho nữ giới =====
+MERGE (sd1:Topic {name:"Xét nghiệm vô sinh dành cho nữ giới", layer:"Topic"})
+MERGE (c1:Cause {name:"các vấn đề với ống dẫn trứng và tử cung có thể là nguyên nhân khiến bạn khó mang thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"các xét nghiệm để phát hiện những vấn đề này bao gồm: siêu âm, x-quang hoặc các xét nghiệm hình ảnh khác – những xét nghiệm này cho thấy hình ảnh bên trong cơ thể. chúng có thể kiểm tra dị dạng tử cung, tắc nghẽn trong ống dẫn trứng (có thể liên quan đến tiền sử nhiễm trùng hoặc phẫu thuật) và các vấn đề khác", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"nội soi – những xét nghiệm này không đơn giản như xét nghiệm hình ảnh, bởi vì chúng là các thủ thuật xâm nhập. bác sĩ có thể quan sát bên trong cơ thể bằng một ống nhỏ có gắn carmera ở đầu. bác sĩ có thể đặt ống vào âm đạo, qua cổ tử cung và lên tử cung để quan sát bên trong tử cung. bác sĩ có thể đặt ống qua một lỗ nhỏ ở da gần rốn để quan sát bên ngoài tử cung, ống dẫn trứng và buồng trứng", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 252 | Chunk 5 | Thụ tinh trong ống nghiệm (IVF) =====
+MERGE (d:Topic {name:"Thụ tinh trong ống nghiệm", layer:"Topic"})
+MERGE (det1:Detail {name:"nó bao gồm các bước sau: người phụ nữ được tiêm hormone trong vài tuần. việc này giúp buồng trứng sẵn sàng vào giai đoạn rụng trứng.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"ngay trước khi rụng trứng, bác sĩ sử dụng một cây kim mỏng để lấy một vài trứng ra khỏi buồng trứng thông qua đường âm đạo.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (det3:Detail {name:"trứng được đưa vào đĩa thí nghiệm có tinh trùng để tinh trùng có thể thụ tinh với 1 hoặc nhiều trứng.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det3)
+MERGE (det4:Detail {name:"sau 2 đến 5 ngày, trứng đã thụ tinh được đưa vào tử cung của phụ nữ với hy vọng một trong số đó bám vào tử cung và phát triển thành thai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det4)
+
+;
+
+// ===== Article 252 | Chunk 6 | Thụ tinh trong ống nghiệm (IVF) =====
+MERGE (d:Topic {name:"Thụ tinh trong ống nghiệm", layer:"Topic"})
+MERGE (p1:Population {name:"những phụ nữ: có ống dẫn trứng bị tắc nghẽn hoặc lạc chỗ", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"người chồng có số lượng tinh trùng quá ít", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p2)
+MERGE (p3:Population {name:"không thể có thai bằng các phương pháp điều trị khác", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p3)
+
+;
+
+// ===== Article 252 | Chunk 7 | Thụ tinh trong ống nghiệm (IVF) =====
+MERGE (d:Topic {name:"Thụ tinh trong ống nghiệm", layer:"Topic"})
+MERGE (det1:Detail {name:"bác sĩ sẽ làm những xét nghiệm trong những thời gian khác nhau của quá trình điều trị để kiểm ta xem nó có hoạt động không. những xét nghiệm này bao gồm xét nghiệm máu và siêu âm. siêu âm là một xét nghiệm hình ảnh học cho phép ta thấy được hình ảnh bên trong cơ thể.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 252 | Chunk 8 | Vô sinh =====
+MERGE (d:Topic {name:"Vô sinh", layer:"Topic"})
+MERGE (det1:Detail {name:"việc điều trị không phải lúc nào cũng giúp người phụ nữ mang thai. phương pháp điều trị như nhau nhưng có thể người phụ nữ này mang thai còn người khác thì không.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 252 | Chunk 9 | Vô sinh =====
+MERGE (d:Topic {name:"Vô sinh", layer:"Topic"})
+MERGE (a1:Advice {name:"nói chuyện với bác sĩ về những ưu điểm và nhược điểm của những phương pháp điều trị khác nhau.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"để chọn phương pháp điều trị phù hợp, bạn có thể suy nghĩ về các vấn đề sau: bác sĩ của bạn nghĩ như thế nào về hiệu quả điều trị. chi phí điều trị - một số phương pháp điều trị sẽ tốn rất nhiều tiền. bảo hiểm y tế không thanh toán cho tất cả các phương pháp điều trị. điều trị sẽ kéo dài bao lâu - việc điều trị có thể phải thực hiện nhiều lần mới có hiệu quả. để mang thai có thể mất vài tháng đến nhiều năm. tác dụng phụ và nhược điểm của điều trị.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (a2:Advice {name:"bạn cũng nên nói chuyện với bác sĩ về các lựa chọn khác, chẳng hạn như nhận con nuôi.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (p1:Population {name:"một người phụ nữ có thể rất khó khăn để đưa ra quyết định.", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (a3:Advice {name:"tốt hơn là nên nói chuyện với người tư vấn hoặc nhóm hỗ trợ người gặp khó khăn trong việc mang thai.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+
+;
+
+// ===== Article 253 | Chunk 1 | Khám hiếm muộn =====
+MERGE (d:Topic {name:"Khám hiếm muộn", layer:"Topic"})
+MERGE (det1:Detail {name:"khi đi khám hiếm muộn, cũng “bình thường thôi”. trút bỏ được cái gánh nặng tâm lý, bạn sẽ giảm được phần nào những lo âu không đáng có, hành trình đi tìm hạnh phúc của bạn nó cũng nhẹ nhàng hơn.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 253 | Chunk 2 | Khám hiếm muộn =====
+MERGE (d:Topic {name:"Khám hiếm muộn", layer:"Topic"})
+MERGE (det1:Detail {name:"khi hai vợ chồng quan hệ thường xuyên (2 - 3 lần/tuần), không áp dụng các biện pháp ngừa thai nào, sau 1 năm mà vẫn chưa có thai. nếu vợ > 35 tuổi, thời gian chờ rút ngắn lại là 6 tháng.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 253 | Chunk 3 | Khám hiếm muộn =====
+MERGE (d:Topic {name:"Khám hiếm muộn", layer:"Topic"})
+MERGE (det1:Detail {name:"bất kỳ ngày nào đẹp trời, hai vợ chồng không bận rộn gì và có chút ít thời gian để hoàn thành các xét nghiệm chẩn đoán và có thể chờ để được tư vấn kết quả", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"trước đây, có thể phải khám khi người vợ vừa mới có kinh (ngày thứ 1 - 3 của chu kỳ), nhưng hiện nay, xét nghiệm đánh giá dự trữ buồng trứng có thể thực hiện bất kỳ ngày nào của chu kỳ kinh và kết quả đánh giá chính xác hơn", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (a1:Advice {name:"có thể người chồng sẽ được chỉ định thử tinh trùng, vậy nên kiêng quan hệ vợ chồng khoảng 2 - 5 ngày trước đó để kết quả chính xác", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+;
+
+// ===== Article 253 | Chunk 4 | Khám hiếm muộn =====
+MERGE (d:Topic {name:"Khám hiếm muộn", layer:"Topic"})
+MERGE (a1:Advice {name:"mang theo một tinh thần thoải mái và sẵn sàng chia sẻ những “nỗi niềm riêng”", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"một số câu hỏi tế nhị (theo suy nghĩ á đông) như “quan hệ bao nhiêu lần/tuần, có xuất tinh được không….” thì cũng nên thẳng thắn trao đổi", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"quan trọng nhất là những thông tin này có thể giúp bác sĩ tìm ra vấn đề khiến việc có thai bị cản trở", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"mang theo tất cả các kết quả xét nghiệm trước đây đã thực hiện ở các cơ sở khám hiếm muộn và phụ khoa (nếu bạn chọn nơi khám mới)", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"có thể hai vợ chồng sẽ phải thực hiện lại các xét nghiệm nếu lần khám trước của bạn thực hiện >6 tháng", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+MERGE (a6:Advice {name:"mang theo một ít chuẩn bị về tinh thần", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a6)
+MERGE (det1:Detail {name:"con đường phía trước có thể mất thời gian – mất tiền bạc – mất nước mắt – mất đi niềm tin", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"tỷ lệ có thai cao nhất của thụ tinh trong ống nghiệm là khoảng 50%, tuy nhiên, cuối cùng rồi hầu hết đều có em bé ẳm về nhà nếu kiên trì và đủ nghị lực", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+;
+
+// ===== Article 253 | Chunk 5 | Khám hiếm muộn =====
+MERGE (d:Topic {name:"Khám hiếm muộn", layer:"Topic"})
+MERGE (det1:Detail {name:"đời sống tình dục của hai vợ chồng. bạn có stress không, chu kỳ kinh thế nào, có từng mắc bệnh phải điều trị lâu dài hay từng phẫu thuật gì trước đây hay chưa? bạn từng có thai lần nào chưa? có nạo phá thai trước đây hay không? thời gian không áp dụng hoặc ngừng sử dụng các biện pháp tránh thai. hút thuốc lá, rượu bia, chất kích thích… nếu có cũng cần nói cho bác sĩ biết. lý do là những “món” này sẽ tác hại nặng nề đến việc thụ thai của hai vợ chồng. một số câu hỏi về những lần điều trị trước nếu có.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 253 | Chunk 7 | Vô sinh  =====
+MERGE (d:Topic {name:"Vô sinh", layer:"Topic"})
+MERGE (c1:Cause {name:"các cặp vợ chồng sau khi nghiêm túc thực hiện đầy đủ các xét nghiệm khảo sát mà không tìm được trục trặc ở chỗ nào", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (def1:Definition {name:"y học gọi là “vô sinh chưa rõ nguyên nhân”", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"có khoảng 10% các cặp vợ chồng", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 253 | Chunk 7 | Vô sinh chưa rõ nguyên nhân =====
+MERGE (d:Topic {name:"Vô sinh", layer:"Topic"})
+MERGE (sd1:SubTopic {name:"Vô sinh chưa rõ nguyên nhân", layer:"SubTopic"})
+MERGE (d)-[:HAS_SUBTOPIC]->(sd1)
+MERGE (det1:Detail {name:"có khoảng 10% các cặp vợ chồng sau khi nghiêm túc thực hiện đầy đủ các xét nghiệm khảo sát mà không tìm được trục trặc ở chỗ nào", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (def1:Definition {name:"y học gọi là “vô sinh chưa rõ nguyên nhân”", layer:"Definition"})
+MERGE (sd1)-[:HAS_DEFINITION]->(def1)
+
+
+
+
+// ===== Article 228 | Chunk 3 | Thai quá ngày dự sinh =====
+MERGE (d:Topic {name:"Thai quá ngày dự sinh", layer:"Topic"})
+MERGE (app1:Application {name:"khi thai bị quá ngày dự sinh 1 tuần, bác sĩ sẽ kiểm tra thai nhi chặt chẽ hơn. tim thai nhi được kiểm tra bằng máy theo dõi tim thai mỗi 1 đến 2 lần trong tuần. thêm vào đó, siêu âm được thực hiện để đánh giá lượng nước ối xung quanh thai nhi. siêu âm cũng được sử dụng để xem cử động của thai nhi. bác sĩ cũng sẽ kiểm tra cổ tử cung để xem cổ tử cung đã mở và ngắn lại chưa.", layer:"Application"})
+MERGE (d)-[:HAS_APPLICATION]->(app1)
+MERGE (a1:Advice {name:"bạn cần liên tục theo dõi cử động thai trong suốt thai kỳ. khi thấy giảm cử động thai, bạn cần đến bác sĩ ngay.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (t1:Treatment {name:"khởi phát chuyển dạ (còn gọi là giục sinh) cũng có thể được đề nghị ở trường hợp thai quá ngày dự sinh 1 tuần.", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+
+;
+
+// ===== Article 229 | Chunk 12 | Tiêu tiểu không kiểm soát =====
+MERGE (d:Topic {name:"Tiêu tiểu không kiểm soát", layer:"Topic"})
+MERGE (t1:Treatment {name:"thực hiện các bài tập kegel để giúp tăng cường các cơ sàn chậu", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (app1:Application {name:"cách tập kegel: làm như bạn đang cố gắng để ngừng đi tiểu, co thắt cơ trong vài giây, sau đó thư giãn. lót băng vệ sinh trong khi làm.", layer:"Application"})
+MERGE (d)-[:HAS_APPLICATION]->(app1)
+MERGE (a1:Advice {name:"hãy cho bác sĩ biết về bất kỳ lần tiêu tiểu không kiểm soát nào mà bạn bị.", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"tiêu tiểu không kiểm soát thường biến mất dần khi cơ thể của bạn trở lại trạng thái bình thường trước khi mang thai.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 232 | Chunk 12 | Ngoại xoay thai =====
+MERGE (d:Topic {name:"Ngoại xoay thai", layer:"Topic"})
+MERGE (app1:Application {name:"khi thủ thuật được hoàn tất, bác sĩ sẽ thực hiện nonstress test một lần nữa", layer:"Application"})
+MERGE (d)-[:HAS_APPLICATION]->(app1)
+MERGE (a1:Advice {name:"nếu mọi thứ đều bình thường, bạn sẽ không phải ở lại bệnh viện", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (comp1:Complication {name:"nếu thủ thuật này không thành công, bác sĩ của bạn sẽ giải thích với bạn về khả năng sinh ngả âm đạo hoặc mổ lấy thai ngay lập tức", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (a2:Advice {name:"bác sĩ cũng có thể đề nghị lặp lại thủ thuật ngoại xoay thai", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+
+;
+
+// ===== Article 234 | Chunk 2 | Progesterone =====
+MERGE (d:Topic {name:"Progesterone", layer:"Topic"})
+MERGE (app1:Application {name:"có thể giúp dự phòng sinh non cho một số phụ nữ", layer:"Application"})
+MERGE (d)-[:HAS_APPLICATION]->(app1)
+MERGE (a1:Advice {name:"cần trao đổi với bác sĩ để biết được progesterone có thể giúp giảm nguy cơ sinh non của bạn hay không", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+
+
+;
+
+// ===== Article 235 | Chunk 4 | Kháng sinh =====
+MERGE (sd1:Topic {name:"Thuốc kháng sinh", layer:"Topic"})
+MERGE (app1:Application {name:"dự phòng nhiễm khuẩn cho sản phụ và thai nhi", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app1)
+MERGE (c1:Cause {name:"nhiễm liên cầu nhóm b", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"ối vỡ non (pprom) - màng ối vỡ trước 37 tuần", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+
+
+;
+
+// ===== Article 237 | Chunk 11 | Corticosteroids =====
+MERGE (sd1:Topic {name:"Corticosteroids", layer:"Topic"})
+MERGE (app1:Application {name:"giúp phát triển phổi, não, hệ tiêu hóa thai nhi", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app1)
+MERGE (det1:Detail {name:"sử dụng tốt nhất từ 24 đến 34 tuần thai, có thể cân nhắc giữa 23-24 tuần", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+
+;
+
+// ===== Article 237 | Chunk 12 | Magnesium sulfate =====
+MERGE (sd1:Topic {name:"Magnesium sulfate", layer:"Topic"})
+MERGE (p1:Population {name:"thai dưới 32 tuần có chuyển dạ sinh non và nguy cơ sinh trong 24 giờ", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (app1:Application {name:"giảm nguy cơ bại não do sinh rất non", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app1)
+MERGE (app2:Application {name:"tác dụng như một thuốc giảm gò tử cung", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app2)
+
+
+;
+
+// ===== Article 237 | Chunk 13 | Thuốc giảm gò tử cung =====
+MERGE (sd1:Topic {name:"Thuốc giảm gò tử cung", layer:"Topic"})
+MERGE (app1:Application {name:"trì hoãn sinh trong thời gian ngắn (đến 48 giờ)", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app1)
+MERGE (det1:Detail {name:"dùng cùng lúc với corticosteroids/magnesium sulfate hoặc khi chuyển viện", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 238 | Chunk 5 | Tocolytics =====
+MERGE (sd1:Topic {name:"Tocolytics", layer:"Topic"})
+MERGE (p1:Population {name:"thai phụ có triệu chứng dọa sinh non", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (app1:Application {name:"làm chậm hoặc ngưng cơn co tử cung, ngăn chuyển dạ trong 2-7 ngày", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app1)
+MERGE (det1:Detail {name:"giúp có thêm thời gian dùng corticosteroids hoặc chuyển viện", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 237 | Chunk 13 | Thuốc giảm gò tử cung =====
+MERGE (sd1:Topic {name:"Thuốc giảm gò tử cung", layer:"Topic"})
+MERGE (app1:Application {name:"trì hoãn sinh trong thời gian ngắn (đến 48 giờ)", layer:"Application"})
+MERGE (sd1)-[:HAS_APPLICATION]->(app1)
+MERGE (det1:Detail {name:"dùng cùng lúc với corticosteroids/magnesium sulfate hoặc khi chuyển viện", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+;
+
+// ===== Article 242 | Chunk 9 | Trắc đồ sinh vật lý =====
+MERGE (d:Topic {name:"Trắc đồ sinh vật lý", layer:"Topic"})
+MERGE (ap1:Application {name:"trắc đồ sinh vật lý (bpp) có thể được thực hiện khi kết quả của các xét nghiệm khác không chắc chắn", layer:"Application"})
+MERGE (d)-[:HAS_APPLICATION]->(ap1)
+MERGE (def1:Definition {name:"bpp sử dụng một hệ thống thang điểm để đánh giá sự khỏe mạnh của thai nhi trong 5 lĩnh vực: 1. nhịp tim thai nhi; 2. cử động thở thai nhi; 3. cử động cơ thể thai nhi; 4. trương lực cơ thai nhi; 5. lượng nước ối.", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"mỗi lĩnh vực sẽ được cho điểm từ 0 đến 2, tổng điểm cho 5 lĩnh vực tối đa là 10 điểm.", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+
+;
+
+// ===== Article 242 | Chunk 15 | Test co thắt đả kích =====
+MERGE (d:Topic {name:"Test co thắt đả kích", layer:"Topic"})
+MERGE (def1:Definition {name:"test co thắt đả kích giúp bác sĩ theo dõi phản ứng của nhịp tim thai khi tử cung co thắt", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (ap1:Application {name:"test co thắt đả kích đôi khi được sử dụng nếu kết quả các xét nghiệm khác không rõ hoặc dương tính", layer:"Application"})
+MERGE (d)-[:HAS_APPLICATION]->(ap1);
+

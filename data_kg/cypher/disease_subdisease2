@@ -1,0 +1,725 @@
+
+// ===== Article 116 | Chunk 1 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (def1:Definition {name:"bệnh lây lan qua tiếp xúc tình dục", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+MERGE (det1:Detail {name:"có thể gây tổn hại nặng cho cơ thể, thậm chí tử vong", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"một số có thể điều trị khỏi, một số không thể", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+// ===== Article 116 | Chunk 2 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (c1:Cause {name:"lây qua tiếp xúc da", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"tình dục qua âm đạo, miệng, trực tràng, hoặc dịch cơ thể", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c2)
+MERGE (det1:Detail {name:"người nhiễm có thể không có triệu chứng nhưng vẫn truyền bệnh", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 3 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (c1:Cause {name:"do vi khuẩn hoặc virus", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"stds do vi khuẩn có thể chữa khỏi bằng kháng sinh", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"stds do virus không thể chữa khỏi, chỉ điều trị giảm triệu chứng", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+
+// ===== Article 116 | Chunk 4 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (rf1:RiskFactor {name:"có nhiều bạn tình", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (rf2:RiskFactor {name:"bạn tình có nhiều bạn tình", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf2)
+MERGE (rf3:RiskFactor {name:"quan hệ với người mắc stds", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf3)
+MERGE (rf4:RiskFactor {name:"có tiền sử stds", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf4)
+MERGE (rf5:RiskFactor {name:"sử dụng thuốc tiêm tĩnh mạch", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf5)
+MERGE (rf6:RiskFactor {name:"tuổi vị thành niên có nguy cơ cao", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf6)
+
+// ===== Article 116 | Chunk 5 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Chlamydia", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (sd2:SubDisease {name:"Lậu", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd2)
+MERGE (sd3:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd3)
+MERGE (sd4:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd4)
+MERGE (sd5:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd5)
+MERGE (sd6:SubDisease {name:"Giang mai", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd6)
+MERGE (sd7:SubDisease {name:"Trùng roi (Trichomonas Vaginalis)", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd7)
+MERGE (sd8:SubDisease {name:"Viêm gan siêu vi B", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd8)
+
+// ===== Article 116 | Chunk 6 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (pr1:Prevention {name:"hiểu rõ bạn tình", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"hạn chế số lượng bạn tình", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"sử dụng bao cao su latex khi quan hệ", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr3)
+MERGE (pr4:Prevention {name:"tránh hành vi quan hệ nguy hiểm gây rách niêm mạc", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr4)
+MERGE (pr5:Prevention {name:"quan hệ tình dục an toàn", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr5)
+
+// ===== Article 116 | Chunk 7 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (pr1:Prevention {name:"tiêm phòng: tạo miễn dịch để phòng ngừa viêm gan siêu vi b và một số chủng hpv", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+
+// ===== Article 116 | Chunk 8 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (p1:Population {name:"mang thai", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (comp1:Complication {name:"lây sang thai nhi", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 9 | Bệnh lây truyền qua đường tình dục  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (a1:Advice {name:"nếu có nguy cơ mắc stds, cần báo với cơ sở khám thai", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (pr1:Prevention {name:"làm xét nghiệm stds định kỳ", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (t1:Treatment {name:"điều trị sớm để giảm nguy cơ lây sang con", layer:"Treatment"})
+MERGE (d)-[:HAS_TREATMENT]->(t1)
+MERGE (a2:Advice {name:"cả mẹ và bạn tình đều cần điều trị", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+
+// ===== Article 116 | Chunk 10 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (p1:Population {name:"người trẻ trong độ tuổi từ 15 - 24", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (pr1:Prevention {name:"sử dụng bao cao su thích hợp và đúng cách", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"đi xét nghiệm std", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr2)
+MERGE (a1:Advice {name:"xét nghiệm stds rất quan trọng vì đó là cách duy nhất để xác định một người mắc stds", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (det1:Detail {name:"nhiều bạn trẻ không biết mình bị nhiễm bệnh vì stds thường không có triệu chứng", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (sd1:SubDisease {name:"Chlamydia", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (sd2:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd2)
+MERGE (det_stat:Detail {name:"cứ bốn người quan hệ tình dục thì có một người mắc std", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det_stat);
+
+// ===== Article 116 | Chunk 11 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (det1:Detail {name:"nhiều bệnh lây truyền qua đường tình dục không gây ra bất kỳ triệu chứng nào", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det1)
+MERGE (pr1:Prevention {name:"cách duy nhất để biết chắc chắn liệu bạn có mắc stds hay không là đi xét nghiệm", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (det2:Detail {name:"một số bệnh stds chữa khỏi được có thể gây nguy hiểm nếu họ không được điều trị", layer:"Detail"})
+MERGE (d)-[:HAS_DETAIL]->(det2)
+MERGE (comp1:Complication {name:"nếu không điều trị, bệnh chlamydia và lậu có thể gây khó khăn hoặc thậm chí là vô sinh", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"bệnh nhân không được điều trị sẽ tăng nguy cơ nhiễm hiv", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"một số bệnh stds, như hiv, có thể gây tử vong nếu không được điều trị", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp3)
+
+// ===== Article 116 | Chunk 12 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (pr1:Prevention {name:"các trung tâm chăm sóc sức khỏe có thể xác định xét nghiệm std khuyến nghị cho con của bạn", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"bên cạnh đó, họ sẽ xác định xét nghiệm nào là phù hợp nhất", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"họ cũng có thể cung cấp thêm thông tin về từng loại xét nghiệm", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr3)
+MERGE (p1:Population {name:"nữ vị thành niên hoạt động tình dục", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"người lớn dưới 25 tuổi", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p2)
+
+// ===== Article 116 | Chunk 13 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Chlamydia", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (sd2:SubDisease {name:"Lậu", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd2)
+MERGE (sd3:SubDisease {name:"Giang mai", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd3)
+MERGE (sd4:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd4)
+MERGE (pr1:Prevention {name:"trong lần khám thai đầu tiên, phụ nữ mang thai nên được xét nghiệm chlamydia, lậu, giang mai và hiv", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"đối với bệnh giang mai, nên xét nghiệm lại sớm trong 3 tháng cuối cho những phụ nữ có nguy cơ mắc bệnh cao", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr2)
+MERGE (rf1:RiskFactor {name:"sống ở những khu vực có nhiều trường hợp mắc bệnh giang mai", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (rf2:RiskFactor {name:"những người có kết quả xét nghiệm dương tính trong 3 tháng đầu thai kỳ", layer:"RiskFactor"})
+MERGE (d)-[:HAS_RISK_FACTOR]->(rf2)
+MERGE (pr5:Prevention {name:"đối với hiv, xét nghiệm lại trong 3 tháng cuối thai kỳ được khuyến nghị cho những phụ nữ có nguy cơ nhiễm hiv cao", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr5)
+MERGE (p1:Population {name:"phụ nữ mang thai", layer:"Population"})
+MERGE (d)-[:AFFECTS]->(p1)
+
+// ===== Article 116 | Chunk 14 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (pr1:Prevention {name:"thử nghiệm std thường có ở các trung tâm y tế và tại các sự kiện sàng lọc cộng đồng", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"trường học cũng có thể cung cấp dịch vụ kiểm tra tại chỗ hoặc thông tin về nơi kiểm tra", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"công cụ định vị xét nghiệm std online cung cấp các địa điểm xét nghiệm gần đó", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr3)
+MERGE (pr4:Prevention {name:"bao gồm cả những địa điểm cung cấp dịch vụ miễn phí hoặc chi phí thấp", layer:"Prevention"})
+MERGE (d)-[:HAS_PREVENTION]->(pr4)
+
+// ===== Article 116 | Chunk 15 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (a1:Advice {name:"hỗ trợ tìm kiếm và theo dõi chăm sóc sức khỏe vị thành niên", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"trò chuyện cùng con của bạn", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"chuẩn bị cho sự tự lập của con bạn", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"nắm rõ các thông tin", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"làm việc với bác sĩ của con bạn", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+MERGE (a6:Advice {name:"tìm kiếm các nguồn thông tin", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a6)
+
+// ===== Article 116 | Chunk 16 | Bệnh lây truyền qua đường tình dục =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (a1:Advice {name:"phụ huynh đóng vai trò quan trọng trong việc giúp con trẻ trở nên khỏe mạnh và hạnh phúc", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"cha mẹ là nguồn thông tin sức khỏe đáng tin cậy giúp cho con trẻ phát triển các mối quan hệ lành mạnh và vượt qua những thách thức đang chờ đón ở phía trước", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a2)
+MERGE (a3:Advice {name:"cha mẹ nên thường xuyên trò chuyện cùng con cái, quan tâm những địa điểm, những người chúng gặp gỡ", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a3)
+MERGE (a4:Advice {name:"vì điều đó có thể giúp con trẻ hạn chế những hành vi không lành mạnh", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a4)
+MERGE (a5:Advice {name:"than thiếu niên hầu hết đã nói chuyện với bố mẹ về các chủ đề sức khỏe, bao gồm cả sức khỏe sinh sản và tình dục", layer:"Advice"})
+MERGE (d)-[:HAS_ADVICE]->(a5)
+
+// ===== Article 116 | Chunk 17 | Chlamydia =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Chlamydia", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (c1:Cause {name:"vi khuẩn", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (comp1:Complication {name:"viêm vùng chậu", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"vô sinh", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp2)
+MERGE (p1:Population {name:"thai phụ", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (pr1:Prevention {name:"xét nghiệm và điều trị", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+
+// ===== Article 116 | Chunk 18 | Chlamydia =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Chlamydia", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (p1:Population {name:"tất cả phụ nữ dưới 25 tuổi có hoạt động tình dục", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"nam giới dưới 25 tuổi hoạt động tình dục ở, sống ở khu vực có nhiều trường hợp nhiễm chlamydia ở nam giới", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p2)
+MERGE (p3:Population {name:"tất cả nam giới từ 13 tuổi quan hệ tình dục với nam giới", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p3)
+MERGE (pr1:Prevention {name:"nên được xét nghiệm chlamydia mỗi năm", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+
+// ===== Article 116 | Chunk 19 | Lậu =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Lậu", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (p1:Population {name:"tất cả phụ nữ dưới 25 tuổi có hoạt động tình dục", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"tất cả nam giới từ 13 tuổi quan hệ tình dục với nam giới", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p2)
+MERGE (pr1:Prevention {name:"nên được xét nghiệm bệnh lậu mỗi năm", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"bất kỳ ai xét nghiệm chlamydia đều được xét nghiệm bệnh lậu cùng một lúc", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+
+// ===== Article 116 | Chunk 20 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (c1:Cause {name:"virus lây qua tiếp xúc da - da", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"hơn 100 loại, khoảng 30 loại gây nhiễm trùng sinh dục", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (c2:Cause {name:"lây lan chủ yếu qua đường tình dục", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+
+// ===== Article 116 | Chunk 21 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (det1:Detail {name:"ít nhất 3/4 người từng quan hệ tình dục sẽ nhiễm hpv sinh dục trong đời", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 21 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (c1:Cause {name:"quan hệ tình dục đường âm đạo, hậu môn, miệng", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"tiếp xúc da với da", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (det1:Detail {name:"thường không có triệu chứng", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 22 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (s1:Symptom {name:"khoảng 12 loại hpv gây mụn cóc sinh dục (âm đạo, dương vật, hậu môn, cổ tử cung)", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"khoảng 15 loại liên quan ung thư cổ tử cung, âm hộ, âm đạo, dương vật, hậu môn, vùng đầu cổ", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+
+// ===== Article 116 | Chunk 23 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (c1:Cause {name:"hpv xâm nhập tế bào cổ tử cung, gây thay đổi bất thường (cin, loạn sản)", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (comp1:Complication {name:"tiến triển thành ung thư nếu hệ miễn dịch không loại bỏ được", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 24 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (pr1:Prevention {name:"xét nghiệm pap (tầm soát ung thư cổ tử cung)", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"xét nghiệm hpv (tìm 13-14 loại hpv nguy cơ cao)", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"kết hợp pap + hpv ở phụ nữ >30 tuổi hoặc khi pap bất thường", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr3)
+
+// ===== Article 116 | Chunk 25 | HPV =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HPV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (pr1:Prevention {name:"vaccine hpv (2 loại)", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"quan hệ tình dục an toàn", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"hạn chế số bạn tình", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr3)
+MERGE (pr4:Prevention {name:"sử dụng bao cao su (hiệu quả một phần, bảo vệ tốt hơn với bao cao su nữ)", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr4)
+
+// ===== Article 116 | Chunk 27 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (s1:Symptom {name:"các vết loét hoặc phồng rộp đau ở miệng, vùng sinh dục hoặc hậu môn", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (det1:Detail {name:"virus có thể lây ngay cả khi không có vết loét nhìn thấy", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 28 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (c1:Cause {name:"virus herpes xâm nhập qua vết loét hoặc màng ẩm khi quan hệ tình dục qua âm đạo, miệng, hậu môn", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (det1:Detail {name:"virus trú ngụ tại tế bào thần kinh gần cột sống, có thể tái hoạt động và gây loét mới", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 29 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (s1:Symptom {name:"có thể không xuất hiện triệu chứng", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"xuất hiện sau 2–10 ngày", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"loét", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"phồng rộp", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"ngứa", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"rát khi tiểu", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"sốt", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s7)
+MERGE (s8:Symptom {name:"sưng hạch", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s8)
+MERGE (s9:Symptom {name:"đau cơ", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s9)
+MERGE (s10:Symptom {name:"mệt mỏi", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s10)
+MERGE (det1:Detail {name:"lần nhiễm đầu kéo dài 2–4 tuần, loét tự lành sau khi vỡ và đóng vảy", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 30 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (det1:Detail {name:"lấy mẫu từ vết loét để nuôi cấy virus, xét nghiệm máu tìm kháng thể. xét nghiệm máu giúp xác định nhiễm mới hoặc tái phát", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 31 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (t1:Treatment {name:"thuốc uống giúp kiểm soát bệnh, rút ngắn quá trình tái phát và giảm triệu chứng", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"không có cách chữa khỏi hoàn toàn do virus vẫn tồn tại trong tế bào thần kinh", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 32 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (s1:Symptom {name:"bỏng rát, ngứa, đau vùng lưng dưới, mông, đùi", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"vết loét xuất hiện sau đó và tự lành trong 3–7 ngày", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (det1:Detail {name:"tái phát thường ít nghiêm trọng hơn lần đầu", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 33 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (pr1:Prevention {name:"tránh quan hệ khi có loét hoặc triệu chứng báo hiệu", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"sử dụng bao cao su giúp giảm nguy cơ nhưng không hoàn toàn bảo vệ vì loét có thể ở ngoài vùng che phủ", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+
+// ===== Article 116 | Chunk 34 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (p1:Population {name:"nếu nhiễm lần đầu khi mang thai, đặc biệt cuối thai kỳ", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (comp1:Complication {name:"nguy cơ truyền cho trẻ cao (30–60%)", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"có thể gây tổn thương não, mắt ở trẻ", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp2)
+MERGE (det1:Detail {name:"nếu có loét khi sinh, thường chỉ định sinh mổ", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 35 | Herpes  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Herpes", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (a1:Advice {name:"mẹ bị herpes sinh dục vẫn có thể cho con bú vì virus không truyền qua sữa mẹ", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"nếu có loét ở đầu vú thì không cho bú bằng bên đó, cần vắt sữa bỏ nếu tiếp xúc với vết loét", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a2)
+
+// ===== Article 116 | Chunk 36 | Lậu =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"Lậu", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (pr1:Prevention {name:"tầm soát lậu cho phụ nữ mang thai ≤25 tuổi hoặc sống trong vùng lưu hành cao", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (comp1:Complication {name:"gây bệnh về mắt, viêm phổi", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 37 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (def1:Definition {name:"hiv (vi rút suy giảm miễn dịch ở người) là loại vi rút gây hội chứng suy giảm miễn dịch mắc phải (aids).", layer:"Definition"})
+MERGE (sd1)-[:HAS_DEFINITION]->(def1)
+
+// ===== Article 116 | Chunk 38 | HIV =====
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (c1:Cause {name:"hiv xâm nhập cơ thể qua dịch cơ thể như máu, tinh dịch", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"khi vào máu, hiv tấn công tế bào cd4 – tế bào quan trọng của hệ miễn dịch, khiến khả năng chống bệnh tật giảm", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+
+// ===== Article 116 | Chunk 39 | AIDS =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (c1:Cause {name:"số lượng tế bào cd4 giảm xuống mức nhất định", layer:"Cause"})
+MERGE (d)-[:HAS_CAUSE]->(c1)
+MERGE (s1:Symptom {name:"dễ mắc bệnh như viêm phổi", layer:"Symptom"})
+MERGE (d)-[:HAS_SYMPTOM]->(s1)
+MERGE (comp1:Complication {name:"một số loại ung thư", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"nhiễm trùng", layer:"Complication"})
+MERGE (d)-[:HAS_COMPLICATION]->(comp2)
+
+// ===== Article 116 | Chunk 40 | HIV =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (det1:Detail {name:"thời gian từ khi nhiễm hiv đến khi biểu hiện aids có thể kéo dài nhiều tháng đến nhiều năm", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (det2:Detail {name:"người bệnh có thể không biết mình nhiễm cho đến khi phát bệnh nếu không xét nghiệm", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det2)
+
+// ===== Article 116 | Chunk 41 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (t1:Treatment {name:"không thể chữa khỏi hoàn toàn, nhưng có thể kiểm soát bằng thuốc chống hiv", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"điều trị giúp người bệnh sống khỏe mạnh lâu hơn và giảm nguy cơ lây nhiễm", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (pr1:Prevention {name:"hiện không có vaccine chống hiv", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+
+// ===== Article 116 | Chunk 42 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (c1:Cause {name:"hiv có thể truyền từ mẹ sang con qua nhau thai trong thai kỳ, khi sinh do tiếp xúc với máu và dịch, và qua sữa mẹ", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+
+// ===== Article 116 | Chunk 43 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (pr1:Prevention {name:"dùng thuốc chống hiv trong thai kỳ", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"sinh mổ nếu tải lượng hiv cao", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"dùng thuốc khi chuyển dạ và sau sinh", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr3)
+MERGE (pr4:Prevention {name:"cho bé uống thuốc sau sinh", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr4)
+MERGE (pr5:Prevention {name:"không cho bé bú", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr5)
+MERGE (det1:Detail {name:"với các biện pháp này, 99% mẹ hiv không truyền bệnh cho con", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 44 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (t1:Treatment {name:"điều trị hiv khi mang thai có 2 mục đích: bảo vệ sức khỏe mẹ và giảm nguy cơ lây sang con. điều trị thường dùng nhiều thuốc phối hợp (phác đồ).", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+// ===== Article 116 | Chunk 45 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (s1:Symptom {name:"buồn nôn", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"tiêu chảy", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (s3:Symptom {name:"đau đầu", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s3)
+MERGE (s4:Symptom {name:"đau cơ", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s4)
+MERGE (s5:Symptom {name:"thiếu máu", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s5)
+MERGE (s6:Symptom {name:"tổn thương gan", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s6)
+MERGE (s7:Symptom {name:"loãng xương", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s7)
+MERGE (det1:Detail {name:"một số thuốc có thể ảnh hưởng thai nhi", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+MERGE (comp1:Complication {name:"nguy cơ lây truyền rất cao nếu không dùng thuốc", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 46 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (det1:Detail {name:"tải lượng vi rút là lượng vi rút có trong cơ thể. cần theo dõi tải lượng vi rút và số lượng cd4. tải lượng cao và cd4 thấp → nguy cơ lây truyền mẹ–con và nguy cơ bệnh cao. ngay cả khi tải lượng thấp, vẫn có thể lây.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 47 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (a1:Advice {name:"thai phụ nhiễm hiv nên dùng bao cao su ngay cả khi mang thai để tránh nhiễm thêm bệnh lây truyền qua đường tình dục", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a1)
+MERGE (a2:Advice {name:"nếu bạn tình không nhiễm, ngoài bao cao su, nên kết hợp thuốc để giảm lây nhiễm", layer:"Advice"})
+MERGE (sd1)-[:HAS_ADVICE]->(a2)
+
+// ===== Article 116 | Chunk 48 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (p1:Population {name:"thai phụ", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (comp1:Complication {name:"hệ miễn dịch yếu", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (comp2:Complication {name:"dễ viêm nhiễm sau phẫu thuật", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp2)
+MERGE (comp3:Complication {name:"vết mổ lâu lành", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp3)
+MERGE (t1:Treatment {name:"thuốc chống viêm được chỉ định trong sinh mổ", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+
+// ===== Article 116 | Chunk 49 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (det1:Detail {name:"sau sinh, bé được xét nghiệm hiv nhiều lần trong vài tháng đầu. nếu ≥2 xét nghiệm dương tính → bé nhiễm hiv. nếu ≥2 xét nghiệm âm tính → bé không nhiễm. khi bé 12–18 tháng sẽ làm xét nghiệm lại.", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 50 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (c1:Cause {name:"virus suy giảm miễn dịch ở người lây qua máu, tinh dịch, dịch cơ thể", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"virus tấn công và phá hủy tế bào cd4 của hệ miễn dịch khiến cơ thể suy giảm khả năng chống bệnh", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (comp1:Complication {name:"hiv có thể lây sang con", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 51 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (c1:Cause {name:"quan hệ tình dục", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (c2:Cause {name:"dùng chung kim tiêm", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c2)
+MERGE (c3:Cause {name:"mẹ truyền sang con khi mang thai", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c3)
+MERGE (c4:Cause {name:"mẹ truyền sang con khi cho con bú", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c4)
+MERGE (det1:Detail {name:"hiv không lây qua tiếp xúc thông thường hay da lành", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 52 | HIV =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (s1:Symptom {name:"triệu chứng giống cúm trong giai đoạn đầu", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s1)
+MERGE (s2:Symptom {name:"sụt cân, mệt mỏi, sốt khi miễn dịch suy yếu", layer:"Symptom"})
+MERGE (sd1)-[:HAS_SYMPTOM]->(s2)
+MERGE (comp1:Complication {name:"tiến triển thành aids khi cd4 giảm thấp hoặc có nhiễm trùng cơ hội", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 53 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (pr1:Prevention {name:"xét nghiệm hiv: tìm kháng thể trong máu", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"có nhiều loại: xét nghiệm nhanh (20 phút), xét nghiệm sàng lọc (2 tuần)", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"nếu dương tính cần làm thêm xét nghiệm khẳng định", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr3)
+
+// ===== Article 116 | Chunk 54 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (p1:Population {name:"nam nữ 19–64 tuổi", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"phụ nữ mang thai", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p2)
+MERGE (rf1:RiskFactor {name:"người có yếu tố nguy cơ", layer:"RiskFactor"})
+MERGE (sd1)-[:HAS_RISK_FACTOR]->(rf1)
+MERGE (pr1:Prevention {name:"xét nghiệm là một phần quan trọng trong chăm sóc tiền sản", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+
+// ===== Article 116 | Chunk 55 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (t1:Treatment {name:"điều trị bằng phối hợp thuốc kháng virus (arv) giúp bảo vệ hệ miễn dịch, kéo dài tuổi thọ và cải thiện sức khỏe", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"hiện chưa có vắc-xin hay thuốc chữa khỏi hiv/aids", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 56 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (pr1:Prevention {name:"sử dụng bao cao su đúng cách trong quan hệ tình dục", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"không dùng chung kim tiêm", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"xét nghiệm hiv cho bạn tình", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr3)
+MERGE (pr4:Prevention {name:"cai nghiện ma túy", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr4)
+
+// ===== Article 116 | Chunk 57 | HIV =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (pr1:Prevention {name:"bao cao su phải được sử dụng mỗi lần quan hệ để giảm nguy cơ lây hiv", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"bao cao su từ da tự nhiên hoặc da cừu không bảo vệ được", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+MERGE (pr3:Prevention {name:"bao cao su latex/polyurethane hiệu quả nhất", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr3)
+
+// ===== Article 116 | Chunk 58 | HIV =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (pr1:Prevention {name:"người sử dụng ma túy không nên dùng chung kim tiêm", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+MERGE (pr2:Prevention {name:"nếu buộc phải dùng, cần vệ sinh kim bằng chất tẩy rửa và nước sau mỗi lần để giảm nguy cơ lây hiv", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr2)
+
+// ===== Article 116 | Chunk 59 | AIDS =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (def1:Definition {name:"aids (hội chứng suy giảm miễn dịch mắc phải) là giai đoạn cuối của hiv, khi hệ miễn dịch suy yếu nặng dẫn đến nhiễm khuẩn nặng và các bệnh cơ hội", layer:"Definition"})
+MERGE (d)-[:HAS_DEFINITION]->(def1)
+
+// ===== Article 116 | Chunk 60 | HIV =====
+MERGE (d:Disease {name:"AIDS", layer:"Disease"})
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd1)
+MERGE (c1:Cause {name:"virus hiv gây suy giảm miễn dịch, dẫn đến aids", layer:"Cause"})
+MERGE (sd1)-[:HAS_CAUSE]->(c1)
+MERGE (p1:Population {name:"phụ nữ mang thai", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (comp1:Complication {name:"lây cho con", layer:"Complication"})
+MERGE (sd1)-[:HAS_COMPLICATION]->(comp1)
+MERGE (t1:Treatment {name:"điều trị bằng thuốc arv và biện pháp y tế", layer:"Treatment"})
+MERGE (sd1)-[:HAS_TREATMENT]->(t1)
+MERGE (det1:Detail {name:"giúp giảm nguy cơ lây truyền từ 25% xuống còn ~1%", layer:"Detail"})
+MERGE (sd1)-[:HAS_DETAIL]->(det1)
+
+// ===== Article 116 | Chunk 61 | HIV =====
+
+MERGE (sd1:SubDisease {name:"HIV", layer:"SubDisease"})
+
+MERGE (p1:Population {name:"nam giới từ 13 tuổi trở lên, quan hệ tình dục đồng giới", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p1)
+MERGE (p2:Population {name:"người tiêm chích ma túy", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p2)
+MERGE (p3:Population {name:"người có bạn tình nhiễm hiv", layer:"Population"})
+MERGE (sd1)-[:AFFECTS]->(p3)
+MERGE (pr1:Prevention {name:"những người được trung tâm y tế cho rằng có nguy cơ mắc bệnh cao cũng nên được tư vấn", layer:"Prevention"})
+MERGE (sd1)-[:HAS_PREVENTION]->(pr1)
+
+// ===== Article 116 | Chunk 62 | Giang mai  =====
+
+MERGE (sd6:SubDisease {name:"Giang mai", layer:"SubDisease"})
+MERGE (c1:Cause {name:"lây qua đường tình dục", layer:"Cause"})
+MERGE (sd6)-[:HAS_CAUSE]->(c1)
+MERGE (pr1:Prevention {name:"điều trị trong thai kỳ và dự phòng giang mai bẩm sinh", layer:"Prevention"})
+MERGE (sd6)-[:HAS_PREVENTION]->(pr1)
+MERGE (comp1:Complication {name:"gây bệnh về mắt, viêm phổi", layer:"Complication"})
+MERGE (sd6)-[:HAS_COMPLICATION]->(comp1)
+
+// ===== Article 116 | Chunk 63 | Giang mai  =====
+MERGE (d:Disease {name:"Bệnh lây truyền qua đường tình dục", layer:"Disease"})
+MERGE (sd6:SubDisease {name:"Giang mai", layer:"SubDisease"})
+MERGE (d)-[:HAS_SUBDISEASE]->(sd6)
+MERGE (p2:Population {name:"nam giới từ 13 tuổi quan hệ tình dục với nam giới", layer:"Population"})
+MERGE (sd6)-[:AFFECTS]->(p2)
+MERGE (comp2:Complication {name:"sẩy thai hoặc thai chết lưu", layer:"Complication"})
+MERGE (sd6)-[:HAS_COMPLICATION]->(comp2)
+MERGE (pr2:Prevention {name:"kiểm tra hàng năm", layer:"Prevention"})
+MERGE (sd6)-[:HAS_PREVENTION]->(pr2)
