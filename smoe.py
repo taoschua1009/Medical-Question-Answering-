@@ -1,10 +1,4 @@
-# ============================================================
-# 🧠 SMoE v3.0 — FULL END-TO-END PIPELINE
-#  Gating + Experts + Cypher Generator + Neo4j Query
-#  - FIX inference tensor issue
-#  - Neo4j env loading
-#  - Cache encoder per expert (nhanh hơn)
-# ============================================================
+
 from functools import lru_cache
 import os
 import torch
